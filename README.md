@@ -1,11 +1,15 @@
 ## Hello, I’m Shashank! 👋🏻
 
-I design, code, and market the products I build. I love solo-travelling and meeting people from different walks of life. At some point in life my ambition was to build a billion dollar company. Today, I want to build a life that allows me to work from anywhere I want, with people I enjoy working with.
+I design, code, and market the products I build. Semi-Nomad. Love meeting people from different walks of life. Early 20s ambition was to build a billion dollar company. Today, I want to build a life that allows me to work on anything I want, anywhere, and with people I enjoy working alongside.
 
-As for career - I started my first startup in college and scaled it up to $50K at 18. I have 7+ years of experience as a full-stack engineer, EM & TPM across multiple startups (mostly B2B SaaS). I have run a dev shop for 3 years shipping 16 products; leading a team of 6-8 engineers. I worked closely with the CXOs of Swiggy, Zerodha & MPL helping them build internal tech.
+Career wise: I started my first startup in college and scaled it
+up to $50K. 7+ years of experience as a full-stack
+engineer, EM & TPM across multiple startups (mostly B2B SaaS). Have run a dev shop for 3+ years shipping 16 products; leading a team of 6-8 engineers. Prev built tech at [Swiggy](https://swiggy.com), [TrueBeacon](https://truebeacon.com) (by [Zerodha](https://zerodha.com)), [MPL](https://mpl.live), [Fyle](https://fylehq.com) & Belong.
 
-- 🔭 Building profitable businesses 👉🏻 [187 Studio](https://187.studio)
-- 🌱 Helping developers monetise their code @ [tinyapi.co](https://tinyapi.co/)
+What I'm upto right now:
+
+- 🌱 Helping developers monetise their code 👉🏻 [tinyapi.co](https://tinyapi.co/)
+- 🔭 Building profitable businesses w/ friends 👉🏻 [187 Studio](https://187.studio)
 - 👯 Swiss army knife for engineering teams 👉🏻 [187 Labs](https://187.studio/labs)
 - 📫 Twitter (or X): [@theshajha](https://twitter.com/theshajha)
 - 😄 Always tinkering with [Serendipitous Experiments](https://theshajha.com/blog/serendipitous-experiments/)
