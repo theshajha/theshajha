@@ -1,10 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
   const contentElement = document.getElementById("content");
-  let path = window.location.pathname.split("/").pop();
+  const urlPath = window.location.pathname;
+  let slug = urlPath.split("/").filter((part) => part.length > 0);
 
-  if (path) {
-    path = path.replace(/-/g, "_") + ".md"; // Converts the slug to the filename format and appends .md
-    fetch(`./posts/${path}`)
+  // Check if the path is correct: expecting something like "/blog/i-turned-28-today/"
+  if (slug[0] === "posts" && slug.length > 1) {
+    let filename = slug[1].replace(/-/g, "_") + ".md"; // Convert slug to filename
+    fetch(`./posts/${filename}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
