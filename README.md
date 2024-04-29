@@ -1,4 +1,4 @@
-### Hello, I’m Shashank! 👋🏻
+## Hello, I’m Shashank! 👋🏻
 
 I design, code, and market the products I build. I love solo-travelling and meeting people from different walks of life. At some point in life my ambition was to build a billion dollar company. Today, I want to build a life that allows me to work from anywhere I want, with people I enjoy working with.
 
