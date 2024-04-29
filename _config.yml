@@ -49,7 +49,7 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
+  email: "theshajha@gmail.com"
   rss: true # remove this line if you don't want to show an RSS link at the bottom
   github: theshajha
   twitter: theshajha
@@ -265,14 +265,14 @@ kramdown:
 # Default YAML values (more information on Jekyll's site)
 defaults:
   - scope:
-      path: ""
+      path: "/pages/posts/"
       type: "posts"
     values:
       layout: "post"
       comments: true # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
   - scope:
-      path: "" # any file that's not a post will be a "page" layout by default
+      path: "/pages" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"
 
