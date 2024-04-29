@@ -13,7 +13,7 @@ _18th July, 2022_
 
 Today, I turned 28. Still processing how to feel about this one.
 
-I prefer to have this day to be by myself as much as possible. It’s like a day on a date with myself. I like to use this day to remind myself how far I’ve come. Relook at my priorities and notice what has changed. What made them change and all that kind of stuff.
+I treat this day like a date with myself. Remind myself how far I’ve come. Revaluate priorities, notice things that have changed, what made them change and all that kind of stuff.
 
 This year, I took a step further and jotted things down. A plan to work on for the following year.
 
@@ -22,7 +22,7 @@ The first question I asked myself - **Where am I looking to be before my next bi
 Here’s what I ended up scribbling -
 
 - Be more joyous
-- Be more financially free
+- Be financially free
 - Create meaningful impact
 
 ## Joy is how I spend my time

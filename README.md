@@ -4,7 +4,7 @@ I design, code, and market the products I build. Semi-Nomad. Love meeting people
 
 Career wise: I started my first startup in college and scaled it
 up to $50K. 7+ years of experience as a full-stack
-engineer, EM & TPM across multiple startups (mostly B2B SaaS). Have run a dev shop for 3+ years shipping 16 products; leading a team of 6-8 engineers. Prev built tech at [Swiggy](https://swiggy.com), [TrueBeacon](https://truebeacon.com) (by [Zerodha](https://zerodha.com)), [MPL](https://mpl.live), [Fyle](https://fylehq.com) & Belong.
+engineer, EM & TPM across multiple startups (mostly B2B SaaS). Have run a dev shop for 3+ years shipping 16 products; lead a team of 6-8 engineers. Prev built tech at [Swiggy](https://swiggy.com), [TrueBeacon](https://truebeacon.com) (by [Zerodha](https://zerodha.com)), [MPL](https://mpl.live), [Fyle](https://fylehq.com) & Belong.
 
 What I'm upto right now:
 
