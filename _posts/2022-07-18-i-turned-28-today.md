@@ -1,7 +1,7 @@
 ---
 title: "I turned 28 today"
-category: "life-update"
-date: "2022-07-18"
+categories: "life-update"
+date: 2022-07-18 06:39:45 -0000
 slug: i-turned-28-today
 description: "Today, I turned 28. Few lessons I've learnt over the past few years."
 layout: post
