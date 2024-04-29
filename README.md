@@ -14,3 +14,17 @@ As for career - I started my first startup in college and scaled it up to $50K a
 ## Contact me
 
 I love meeting new people, and I reply to every email, so [say hello](mailto:theshajha+website@gmail.com).
+
+## 📚 If I could only read 11 books
+
+- **Meditations** by _Marcus Aurelius_
+- **The Courage To Be Disliked** by _Ichiro Kishimi_, _Fumitake Koga_
+- **No Rules Rules** by _Reed Hastings_, _Erin Meyer_
+- **Thinking, Fast and Slow** by _Daniel Kahneman_
+- **Siddhartha** by **\***Hermann Hesse\*
+- **The Great CEO Within** by _Matt Mochary_
+- **The Hard Thing About Hard Things** By _Ben Horowitz_
+- **Skin in the Game** by _Nassim Nicholas Taleb_
+- **Getting Real** by Susan Campbell
+- **The Subtle Art of Not Giving a F\*ck** by Mark Manson
+- **Almanac of Naval Ravikant**

@@ -4,6 +4,7 @@ category: "life-update"
 date: "2022-07-18"
 slug: i-turned-28-today
 description: "Today, I turned 28. Few lessons I've learnt over the past few years."
+layout: page
 ---
 
 # I turned 28 today
