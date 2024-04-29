@@ -265,7 +265,7 @@ kramdown:
 # Default YAML values (more information on Jekyll's site)
 defaults:
   - scope:
-      path: ""
+      path: "posts"
       type: "posts"
     values:
       layout: "post"
