@@ -1,0 +1,38 @@
+name: Convert Markdown to HTML
+
+on:
+  push:
+    paths:
+      - "posts/markdown/*.md"
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+
+      - name: Install markdown-to-html converter
+        run: npm install -g markdown-to-html-cli
+
+      - name: Convert Markdown files to HTML
+        run: |
+          mkdir -p posts
+          for mdfile in posts/markdown/*.md; do
+            htmlfile="posts/$(basename "$mdfile" .md).html"
+            markdown-to-html "$mdfile" -o "$htmlfile"
+          done
+
+      - name: Commit HTML files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add posts/*.html
+          git commit -m "Update HTML files from Markdown" -a || echo "No changes to commit"
+          git push
