@@ -1,7 +1,7 @@
 ## Hello, I’m Shashank! 👋🏻
 
 I design, code, and market the products I build. Semi-Nomad. Love meeting people from different walks of life. Early 20s ambition was to build a billion dollar company. Today, I am building a life
-that allows me to work on anything I enjoy, from anywhere I want, and with people I enjoy working alongside.
+that allows me to work on anything I enjoy, from anywhere I want, alongside people I enjoy working with.
 
 Career wise: I started my first startup in college and scaled it
 up to $50K. 7+ years of experience as a full-stack
