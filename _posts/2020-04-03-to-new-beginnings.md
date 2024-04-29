@@ -9,6 +9,8 @@ layout: post
 
 # To new beginnings...
 
+_3rd April, 2020_
+
 \***\*I’ll be honest, it’s been crazy last few months.\*\***
 
 A lot of things happened. As November was nearing to end, the B2B SaaS company I was working at, started to shake up. I spent about a month thinking what I really wanted to do next and if at all taking another job is the right thing to do.
