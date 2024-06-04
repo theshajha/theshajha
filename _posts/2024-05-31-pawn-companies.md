@@ -1,3 +1,12 @@
+---
+title: "PAWN (Profitable, Automated, Well-Run, Nimble) Companies"
+category: "life-update"
+date: "2024-05-31"
+slug: pawn-companies
+description: "If you're looking to build a company that allows you to work on what you love, from anywhere you want, alongside people you enjoy, consider the PAWN model."
+layout: post
+---
+
 ## PAWN (Profitable, Automated, Well-Run, Nimble) Companies
 
 When I was in my early 20s, my ambition was to build a billion-dollar company. Today, my goal is different. I want to build a life that allows me to work on anything I enjoy, from anywhere I want, alongside people I enjoy working with. I like to call these PAWN companies: Profitable, Automated, Well-Run, and Nimble.
