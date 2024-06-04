@@ -50,10 +50,15 @@ I love building and have built and shipped several products since I was 16. I ha
 Here are the platforms and technologies I'm proficient with. If you don't see something, don't worry — I learn fast!
 
 💻 Front-end: HTML, CSS, JavaScript, TypeScript, ReactJS, NextJS, Tailwind
+
 🔧 Back-end: Python, Java, Node.js
+
 🌐 Platforms: Shopify, Retool, PostHog, Notion, Atlassian, MixPanel, Intercom, HuggingFace
+
 🎨 Design: Figma, Photoshop, Canva
+
 ☁️ Cloud Services / Hosting: AWS (Lambda, RDS, EC2, S3, CloudWatch), Google Cloud (Log Explorer, Firebase), Vercel, Railway
+
 🗄️ Databases: Postgres, MySQL, GraphQL, DynamoDB
 
 
@@ -70,8 +75,28 @@ As an experienced CTO with expertise in both B2C and B2B startups, I offer compr
 
 Interested in discussing further? [Drop me a message 📧](mailto:theshajha@gmial.com?subject=Fractional%20CTO)
 
-| Package       | Renewal  | Ideal For                                        | Terms                                                                                     |
-|---------------|----------|--------------------------------------------------|-------------------------------------------------------------------------------------------|
-| **Advisory**  | 3 months | Early-stage startups and MVP development         | - Weekly strategy sessions<br>- Deliverables focused on targeted technical guidance        |
-| **Launching** | 3 months | Pre-seed to Seed stage startups                  | - Up to 4 hours of meetings per week<br>- Technical and product management<br>- Recruitment and management of engineers<br>- Support for investor presentations and calls  |
-| **Scaling**   | 6 months | Seed to Series B+ growth                         | - Up to 6 hours of meetings per week<br>- Includes all 'Launching' services<br>- PR review<br>- Engineering team management<br>- Direct execution of technical strategies  |
+### Advisory Package
+**Renewal:** 3 months  
+**Ideal For:** Early-stage startups and MVP development  
+**Terms:**  
+- Weekly strategy sessions  
+- Deliverables focused on targeted technical guidance  
+
+### Launching Package
+**Renewal:** 3 months  
+**Ideal For:** Pre-seed to Seed stage startups  
+**Terms:**  
+- Up to 4 hours of meetings per week  
+- Technical and product management  
+- Recruitment and management of engineers  
+- Support for investor presentations and calls  
+
+### Scaling Package
+**Renewal:** 6 months  
+**Ideal For:** Seed to Series B+ growth  
+**Terms:**  
+- Up to 6 hours of meetings per week  
+- Includes all 'Launching' services  
+- PR review  
+- Engineering team management  
+- Direct execution of technical strategies 
