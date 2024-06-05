@@ -86,15 +86,35 @@
             margin-right: 0.5em;
         }
         .package {
-            margin-top: 1em;
-            padding: 1em;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-        }
-        .package h4 {
-            margin-top: 0;
-        }
+    margin-top: 1em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    margin: 0.5em;
+    min-width: 250px;
+}
+
+.package h4 {
+    margin-top: 0;
+}
+
+.packages-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .packages-list {
+        flex-direction: column;
+    }
+    .package {
+        margin: 0.5em 0;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -179,41 +199,38 @@
             <li>Focus on results, not hours</li>
         </ul>
         <p>Interested in discussing further? <a href="https://cal.com/theshajha/fractional-cto" target="_blank">setup a discovery call 📧</a></p>
-
+    
         <div class="package">
             <h4>Advisory Package</h4>
-            <p><strong>Ideal For:</strong> Early-stage startups and MVP development</p>
-            <p><strong>Terms:</strong></p>
             <ul>
-                <li>Weekly strategy sessions</li>
-                <li>Deliverables focused on targeted technical guidance</li>
+                <li><strong>Ideal For:</strong> Early-stage startups and MVP development</li>
+                <li>📅 Weekly strategy sessions</li>
+                <li>📊 Deliverables focused on targeted technical guidance</li>
             </ul>
         </div>
-
+    
         <div class="package">
             <h4>Launching Package</h4>
-            <p><strong>Ideal For:</strong> Pre-seed to Seed stage startups</p>
-            <p><strong>Terms:</strong></p>
             <ul>
-                <li>Up to 4 hours of meetings per week</li>
-                <li>Technical and product management</li>
-                <li>Recruitment and management of engineers</li>
-                <li>Support for investor presentations and calls</li>
+                <li><strong>Ideal For:</strong> Pre-seed to Seed stage startups</li>
+                <li>🕒 Up to 4 hours of meetings per week</li>
+                <li>🛠 Technical and product management</li>
+                <li>👨‍💻 Recruitment and management of engineers</li>
+                <li>📞 Support for investor presentations and calls</li>
             </ul>
         </div>
-
+    
         <div class="package">
             <h4>Scaling Package</h4>
-            <p><strong>Ideal For:</strong> Seed to Series B+ growth</p>
-            <p><strong>Terms:</strong></p>
             <ul>
-                <li>Up to 6 hours of meetings per week</li>
-                <li>Includes all 'Launching' services</li>
-                <li>PR review</li>
-                <li>Engineering team management</li>
-                <li>Direct execution of technical strategies</li>
+                <li><strong>Ideal For:</strong> Seed to Series B+ growth</li>
+                <li>🕒 Up to 6 hours of meetings per week</li>
+                <li>🛠 Includes all 'Launching' services</li>
+                <li>📰 PR review</li>
+                <li>👨‍💻 Engineering team management</li>
+                <li>🚀 Direct execution of technical strategies</li>
             </ul>
         </div>
-    </section>
+    </section>    
 </body>
 </html>
