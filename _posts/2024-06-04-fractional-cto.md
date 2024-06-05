@@ -9,11 +9,11 @@ layout: post
 
 # 🤝 Shashank Jha: Fractional CTO
 
-## 👋 Hey, I’m Shashank
+## 👋 Hey, I’m Shashank [LI](https://linkedin.com/in/theshajha/) | [Tw](https://twitter.com/theshajha)
 
-I’m an experienced engineering leader. Prev built tech at [Swiggy](https://swiggy.com), [TrueBeacon](https://truebeacon.com) (by [Zerodha](https://zerodha.com)), [MPL](https://mpl.live), [Fyle](https://fylehq.com) & Belong. I founded [Tiny API](https://tinyapi.co) (part of [Antler India Residency](https://www.antler.co/)) which was voted product of the day on [PH](https://www.producthunt.com/products/tiny-api#tiny-api).
+I’m an experienced engineering leader. Prev built tech for [Swiggy](https://swiggy.com), [TrueBeacon](https://truebeacon.com) (by [Zerodha](https://zerodha.com)), [MPL](https://mpl.live), [Fyle](https://fylehq.com) & Belong. I founded [Tiny API](https://tinyapi.co) (part of [Antler India Residency](https://www.antler.co/)) which was voted #1 product of the day on [Product Hunt](https://www.producthunt.com/products/tiny-api#tiny-api).
 
-I've recently taken some time off to plan my next stint, and I'm now offering my services as a fractional CTO.
+I was on a break for last few weeks (after 8 long years). I am back to building. This time helping startups win as a fractional CTO.
 
 I handle everything from technical strategy and managing engineers to design, product support, and delivering great products. My aim is to get the job done quickly and well, so your company can succeed.
 
@@ -73,7 +73,7 @@ As an experienced CTO with expertise in both B2C and B2B startups, I offer compr
 - Full integration with team tools and processes
 - Focus on results, not hours
 
-Interested in discussing further? [Drop me a message 📧](mailto:theshajha@gmial.com?subject=Fractional%20CTO)
+Interested in discussing further? [setup a discovery call 📧](https://cal.com/theshajha/fractional-cto)
 
 ### Advisory Package
 **Renewal:** 3 months  
