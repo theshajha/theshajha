@@ -45,12 +45,42 @@
             background-color: #f4f4f4;
             color: #333;
         }
-        h1, h2, h3, h4 {
-            color: #444;
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         h1 {
             font-size: 2.5em;
             margin-bottom: 0.5em;
+            flex-grow: 1;
+        }
+        .header-links {
+            display: flex;
+            align-items: center;
+        }
+        .header-links a {
+            margin-left: 15px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .header-links a:hover {
+            text-decoration: underline;
+        }
+        .call-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        .call-button:hover {
+            background-color: #0056b3;
+        }
+        h2, h3, h4 {
+            color: #444;
         }
         h2 {
             font-size: 2em;
@@ -66,13 +96,6 @@
         }
         p {
             margin: 0.5em 0;
-        }
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
         }
         ul {
             list-style: none;
@@ -101,19 +124,29 @@
         .package {
             margin-top: 1em;
             padding: 1em;
-            background-color: #fff;
+            border: 1px solid #ddd;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+        .package h4 {
+            margin-top: 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>🤝 Shashank Jha: Fractional CTO</h1>
-        <p>👋 Hey, I’m Shashank <a href="https://linkedin.com/in/theshajha/" target="_blank">[LI]</a> | <a href="https://twitter.com/theshajha" target="_blank">[Tw]</a></p>
+        <div>
+            <h1>🤝 Shashank Jha: Fractional CTO</h1>
+            <div class="header-links">
+                <a href="https://linkedin.com/in/theshajha/" target="_blank">LinkedIn</a> | 
+                <a href="https://twitter.com/theshajha" target="_blank">Twitter</a>
+            </div>
+        </div>
+        <a href="https://cal.com/theshajha/fractional-cto" class="call-button" target="_blank">Book a Call</a>
     </header>
 
     <section class="section">
+        <p>👋 Hey, I’m <b>Shashank</b></p>
         <p>I’m an experienced engineering leader. Prev built tech for <a href="https://swiggy.com" target="_blank">Swiggy</a>, <a href="https://truebeacon.com" target="_blank">TrueBeacon</a> (by <a href="https://zerodha.com" target="_blank">Zerodha</a>), <a href="https://mpl.live" target="_blank">MPL</a>, <a href="https://fylehq.com" target="_blank">Fyle</a> & Belong. I founded <a href="https://tinyapi.co" target="_blank">Tiny API</a> (part of <a href="https://www.antler.co/" target="_blank">Antler India Residency</a>) which was voted #1 product of the day on <a href="https://www.producthunt.com/products/tiny-api#tiny-api" target="_blank">Product Hunt</a>.</p>
         <p>I was on a break for the last few weeks (after 8 long years). I am back to building, this time helping startups win as a fractional CTO.</p>
         <p>I handle everything from technical strategy and managing engineers to design, product support, and delivering great products. My aim is to get the job done quickly and well, so your company can succeed.</p>
@@ -184,8 +217,7 @@
         <p>Interested in discussing further? <a href="https://cal.com/theshajha/fractional-cto" target="_blank">setup a discovery call 📧</a></p>
 
         <div class="package">
-            <h3>Advisory Package</h3>
-            <p><strong>Renewal:</strong> 3 months</p>
+            <h4>Advisory Package</h4>
             <p><strong>Ideal For:</strong> Early-stage startups and MVP development</p>
             <p><strong>Terms:</strong></p>
             <ul>
@@ -195,8 +227,7 @@
         </div>
 
         <div class="package">
-            <h3>Launching Package</h3>
-            <p><strong>Renewal:</strong> 3 months</p>
+            <h4>Launching Package</h4>
             <p><strong>Ideal For:</strong> Pre-seed to Seed stage startups</p>
             <p><strong>Terms:</strong></p>
             <ul>
@@ -208,8 +239,7 @@
         </div>
 
         <div class="package">
-            <h3>Scaling Package</h3>
-            <p><strong>Renewal:</strong> 6 months</p>
+            <h4>Scaling Package</h4>
             <p><strong>Ideal For:</strong> Seed to Series B+ growth</p>
             <p><strong>Terms:</strong></p>
             <ul>
