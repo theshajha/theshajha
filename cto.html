@@ -109,20 +109,18 @@
             margin: 10px 0;
         }
 
-        .packages-list ul li::before {
-            content: "✅";
-            margin-right: 0.5em;
+        .packages-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
         }
 
         .package {
-            margin-top: 1em;
-            padding: 1em;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-            flex: 1;
-            margin: 0.5em;
-            min-width: 250px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .package h4 {
@@ -130,13 +128,7 @@
         }
 
         @media (max-width: 768px) {
-            .packages-list {
-                flex-direction: column;
-            }
-            .package {
-                margin: 0.5em 0;
-            }
-            .services-container {
+            .packages-container {
                 grid-template-columns: 1fr;
             }
         }
@@ -170,47 +162,46 @@
     </section>
 
     <section class="section services-container">
-        <div class="service">
-            <h2>💪 What I do</h2>
-        </div>
-
-        <div class="service">
-            <h3>💻 Technology & Product</h3>
-            <ul class="tools-list">
-                <li>Build roadmap, choose stack, and plan sprints</li>
-                <li>Hands-on development as needed</li>
-                <li>Design, build and manage websites</li>
-                <li>Find, hire and manage engineers: full-time, freelancers or dev shops</li>
-            </ul>
-        </div>
-
-        <div class="service">
-            <h3>👊 AI & LLMs</h3>
-            <ul class="tools-list">
-                <li>Optimize business operations with LLM tools</li>
-                <li>Boost team productivity with AI</li>
-                <li>Identify AI opportunities in your business</li>
-                <li>Develop custom AI solutions</li>
-            </ul>
-        </div>
-
-        <div class="service">
-            <h3>👊 Leadership</h3>
-            <ul class="tools-list">
-                <li>Fundraising support: pitch deck, investor calls</li>
-                <li>Facilitate stakeholder communication</li>
-            </ul>
-        </div>
-
-        <div class="service">
-            <h3>🛠 Additional Services</h3>
-            <ul class="tools-list">
-                <li>Ensure compliance and security</li>
-                <li>Improve UX/UI design</li>
-                <li>Conduct market research for product strategy</li>
-                <li>Leverage industry connections for networking</li>
-            </ul>
-        </div>
+        <h2>💪 What I do</h2>
+        <div class="services-container">
+            <div class="service">
+                <h3>💻 Technology & Product</h3>
+                <ul class="tools-list">
+                    <li>Build roadmap, choose stack, and plan sprints</li>
+                    <li>Hands-on development as needed</li>
+                    <li>Design, build and manage websites</li>
+                    <li>Find, hire and manage engineers: full-time, freelancers or dev shops</li>
+                </ul>
+            </div>
+    
+            <div class="service">
+                <h3>👊 AI & LLMs</h3>
+                <ul class="tools-list">
+                    <li>Optimize business operations with LLM tools</li>
+                    <li>Boost team productivity with AI</li>
+                    <li>Identify AI opportunities in your business</li>
+                    <li>Develop custom AI solutions</li>
+                </ul>
+            </div>
+    
+            <div class="service">
+                <h3>👊 Leadership</h3>
+                <ul class="tools-list">
+                    <li>Fundraising support: pitch deck, investor calls</li>
+                    <li>Facilitate stakeholder communication</li>
+                </ul>
+            </div>
+    
+            <div class="service">
+                <h3>🛠 Additional Services</h3>
+                <ul class="tools-list">
+                    <li>Ensure compliance and security</li>
+                    <li>Improve UX/UI design</li>
+                    <li>Conduct market research for product strategy</li>
+                    <li>Leverage industry connections for networking</li>
+                </ul>
+            </div>
+        </div>  
     </section>
 
     <section class="section">
@@ -237,37 +228,51 @@
         </ul>
         <p>Interested in discussing further? <a href="https://cal.com/theshajha/fractional-cto" target="_blank">setup a discovery call 📧</a></p>
     
-        <div class="package">
-            <h4>Advisory</h4>
-            <ul>
-                <li><strong>Ideal For:</strong> Early-stage startups and MVP development</li>
-                <li>📅 Weekly strategy sessions</li>
-                <li>📊 Deliverables focused on targeted technical guidance</li>
-            </ul>
-        </div>
+        <div class="packages-container">
+            <div class="package">
+                <h4>Advisory</h4>
+                <ul>
+                    <li><strong>Ideal For:</strong> Early-stage startups and MVP development</li>
+                    <li>📅 Weekly strategy sessions</li>
+                    <li>📊 Deliverables focused on targeted technical guidance</li>
+                </ul>
+            </div>
     
-        <div class="package">
-            <h4>Launching</h4>
-            <ul>
-                <li><strong>Ideal For:</strong> Pre-seed to Seed stage startups</li>
-                <li>🕒 Up to 4 hours of meetings per week</li>
-                <li>🛠 Technical and product management</li>
-                <li>👨‍💻 Recruitment and management of engineers</li>
-                <li>📞 Support for investor presentations and calls</li>
-            </ul>
-        </div>
+            <div class="package">
+                <h4>Launching</h4>
+                <ul>
+                    <li><strong>Ideal For:</strong> Pre-seed to Seed stage startups</li>
+                    <li>🕒 Up to 4 hours of meetings per week</li>
+                    <li>🛠 Technical and product management</li>
+                    <li>👨‍💻 Recruitment and management of engineers</li>
+                    <li>📞 Support for investor presentations and calls</li>
+                </ul>
+            </div>
     
-        <div class="package">
-            <h4>Scaling</h4>
-            <ul>
-                <li><strong>Ideal For:</strong> Seed to Series B+ growth</li>
-                <li>🕒 Up to 6 hours of meetings per week</li>
-                <li>🛠 Includes all 'Launching' services</li>
-                <li>📰 PR review</li>
-                <li>👨‍💻 Engineering team management</li>
-                <li>🚀 Direct execution of technical strategies</li>
-            </ul>
+            <div class="package">
+                <h4>Scaling</h4>
+                <ul>
+                    <li><strong>Ideal For:</strong> Seed to Series B+ growth</li>
+                    <li>🕒 Up to 6 hours of meetings per week</li>
+                    <li>🛠 Includes all 'Launching' services</li>
+                    <li>📰 PR review</li>
+                    <li>👨‍💻 Engineering team management</li>
+                    <li>🚀 Direct execution of technical strategies</li>
+                </ul>
+            </div>
+            
+            <div class="package">
+                <h4>Custom Solution</h4>
+                <ul>
+                    <li><strong>Ideal For:</strong> Companies with unique requirements</li>
+                    <li>🕒 Flexible hours based on project needs</li>
+                    <li>🛠 Tailored technical and product strategies</li>
+                    <li>👨‍💻 Specialized recruitment and team building</li>
+                    <li>📞 Ongoing support and consultancy</li>
+                </ul>
+            </div>
         </div>
-    </section>    
+    </section>
+    
 </body>
 </html>
