@@ -9,9 +9,10 @@ engineer, EM & TPM across multiple startups (mostly B2B SaaS). Have run a dev sh
 
 What I'm upto right now:
 
+- 🤝 Swiss army knife for engineering teams 👉🏻 [Fractional CTO](https://theshajha.com/cto)
 - 🌱 Helping developers monetise their code 👉🏻 [tinyapi.co](https://tinyapi.co/)
 - 🔭 Building profitable businesses w/ friends 👉🏻 [187 Studio](https://187.studio)
-- 👯 Swiss army knife for engineering teams 👉🏻 [187 Labs](https://187.studio/labs)
+- 👯 Founder friendly dev shop with high agency 👉🏻 [187 Labs](https://187.studio/labs)
 - 📫 Twitter (or X): [@theshajha](https://twitter.com/theshajha)
 - 😄 Always tinkering with [Serendipitous Experiments](https://theshajha.com/blog/serendipitous-experiments/)
 - ⚡ Fun fact: I did my first solo-paragliding from 8000 feet last year. :D
