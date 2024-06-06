@@ -81,6 +81,34 @@
             content: "👉🏻";
             margin-right: 0.5em;
         }
+
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .service {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .service h2, .service h3 {
+            margin-top: 0;
+        }
+
+        .service ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .service ul li {
+            margin: 10px 0;
+        }
+
         .packages-list ul li::before {
             content: "✅";
             margin-right: 0.5em;
@@ -138,7 +166,7 @@
         <p>As a fractional CTO I bring tech expertise and strategic guidance without the full-time cost. I help you build fast, avoid pitfalls, and drive innovation. Several companies I work with already have full-time CTO. In such a setup I work alongside them to offer additional strategic insights, specialized expertise, and support during peak times, ensuring your tech operations are always optimized.</p>
     </section>
 
-    <section class="section">
+    <section class="section services-container">
         <h2>💪 What I do</h2>
 
         <h3>💻 Technology & Product</h3>
