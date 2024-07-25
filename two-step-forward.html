@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Step Forward</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px;
+            background-color: #fff;
+            border-radius: 8px;
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+        }
+        header {
+            /* text-align: center; */
+            margin-bottom: 20px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #333;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .intro, .examples, .more-info {
+            margin-bottom: 20px;
+        }
+        .intro h2, .examples h2, .more-info h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .intro ul, .examples ul {
+            list-style: disc inside;
+            padding: 0;
+            color: #444;
+            font-size: 1em;
+            line-height: 1.2em;
+        }
+        .intro ul li, .examples ul li {
+            margin-bottom: 8px;
+        }
+        .apply-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #ffdf5d;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .apply-button:hover {
+            background-color: #fcd03d;
+        }
+        .social {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .social a {
+            color: #1da1f2;
+            text-decoration: none;
+        }
+        .social a:hover {
+            text-decoration: underline;
+        }
+        .more-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .info-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .info-box {
+            flex: 1 1 calc(40% - 20px);
+            padding: 12px 20px;
+            background-color: #FFE69C;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-box h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .info-box p {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        .info-box a {
+            color: #1da1f2;
+            text-decoration: none;
+        }
+        .info-box a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .info-box {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Two Step Forward [WIP]</h1>
+            <p>Goal is to help you take the next big step in your career ✨</p>
+            <p style="font-size: 1em;"><i>We go live on 5th August, 2024. Thanks for your patience. Got ideas? <a href="mailto:theshajha@gmail.com?subject=Two%20Step%20Forward">write to me</a></i></p>
+        </header>
+        <section class="intro">
+            <h2>Join the Two Step Forward network to access:</h2>
+            <ul>
+                <li>Unique job opportunities that you won't find elsewhere</li>
+                <li>Connections with like-minded professionals</li>
+                <li>Exclusive invitations to private events (currently only in BLR)</li>
+                <li>Handpicked lists of innovative startups looking for talent</li>
+                <li>Resources and connections for startups looking to raise funds and connect with VCs</li>
+                <li>A podcast featuring in-depth interviews with founders and operators sharing their insights (coming soon✨)</li>
+            </ul>
+            <a href="#" class="apply-button">✨ Apply here to join (takes less than 5 minutes)</a>
+        </section>
+        <section class="examples">
+            <h2>Who you'll find @ Two Step Forward:</h2>
+            <ul>
+                <li>Founders who have successfully exited their previous startups and are now exploring new ventures</li>
+                <li>Engineering leaders from Series C companies ready to embark on their next challenge</li>
+                <li>VPs & senior leadership at top companies considering joining early-stage startups</li>
+                <li>And many other builders, enablers, innovators and more.</li>
+            </ul>
+            <!-- <a href="#" class="apply-button">✨ Apply here to join</a> -->
+            <!-- <div class="social">
+                <a href="https://twitter.com" target="_blank">Follow us on Twitter</a> and 
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </div> -->
+        </section>
+        <section class="more-info">
+            <h2>What to expect when you join Two Step Forward</h2>
+            <div class="info-container">
+                <div class="info-box">
+                    <h3>Gatherings</h3>
+                    <p>Curated gatherings of top-notch founders and operators exploring their next move. Whether you're starting a company or joining one, these events are for you.</p>
+                    <p>Currently only in Bangalore.</p>
+                </div>
+                <div class="info-box">
+                    <h3>Podcast</h3>
+                    <p>Hear from world-class founders, investors, and operators who recently found their next step. They share their journeys and insights.</p>
+                    <p>Coming soon on <a href="#" target="_blank">Spotify</a> and <a href="#" target="_blank">Apple Podcasts</a>.</p>
+                </div>
+                <div class="info-box">
+                    <h3>Matching</h3>
+                    <p>We introduce great people considering their next move. It's a way to spark ideas, build momentum, and discuss what might come next.</p>
+                </div>
+                <div class="info-box">
+                    <h3>Newsletter</h3>
+                    <p>Get under-the-radar opportunities from early-stage companies, co-founders seeking partners, and more.</p>
+                </div>
+                <!-- <div class="info-box">
+                    <h3>Lists</h3>
+                    <p>We curate lists of great companies to join. <a href="#">See here</a>.</p>
+                </div> -->
+            </div>
+        </section>
+    </div>
+</body>
+</html>
