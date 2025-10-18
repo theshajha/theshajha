@@ -1,217 +1,460 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Shashank Jha - Product Engineer & Entrepreneur</title>
-        <meta
-            name="description"
-            content="Shashank Jha - Full-stack Engineer, Product Designer, Entrepreneur, Solo-traveller."
-        />
-        <meta
-            name="keywords"
-            content="Shashank Jha, Full-stack Engineer, Product Designer, Entrepreneur, Solo-traveller"
-        />
-        <meta name="author" content="Shashank Jha" />
-        <link
-            rel="icon"
-            href="assets/images/favicon/favicon.ico"
-            type="image/x-icon"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="assets/images/favicon/favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="assets/images/favicon/favicon-16x16.png"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="assets/images/favicon/apple-touch-icon.png"
-        />
-        <style>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shashank Jha</title>
+    <meta name="description" content="Shashank Jha - Product Engineer & Entrepreneur" />
+    <meta name="author" content="Shashank Jha" />
+    <link rel="icon" href="assets/images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 720px;
+            padding: 56px 32px;
+            color: #1c1c1c;
+            background: #fafafa;
+            font-size: 15px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 34px;
+            gap: 22px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 500;
+            margin-bottom: 0;
+            color: #000;
+            letter-spacing: -0.5px;
+        }
+
+        .header-right {
+            padding-top: 8px;
+        }
+
+        h2 {
+            font-size: 13px;
+            font-weight: 500;
+            margin-top: 22px;
+            margin-bottom: 14px;
+            color: #666;
+            letter-spacing: 0.5px;
+        }
+
+        h2.section-header {
+            margin-top: 45px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #464646;
+            line-height: 1.7;
+        }
+
+        a {
+            color: #1c1c1c;
+            text-decoration: none;
+            border-bottom: 1px solid #d4d4d4;
+            transition: border-color 0.15s;
+        }
+
+        a:hover {
+            border-bottom-color: #1c1c1c;
+        }
+
+        .intro {
+            margin-bottom: 34px;
+        }
+
+        .intro p {
+            font-size: 16px;
+            line-height: 1.65;
+            margin-bottom: 12px;
+        }
+
+        .intro p:last-child {
+            color: #666;
+            font-size: 15px;
+        }
+
+        .status {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #666;
+            font-size: 13px;
+        }
+
+        .status-dot {
+            width: 6px;
+            height: 6px;
+            background: #10b981;
+            border-radius: 50%;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 14px;
+            margin-bottom: 45px;
+        }
+
+        .project-card {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 6px;
+            padding: 20px;
+            transition: border-color 0.15s;
+        }
+
+        .project-card:hover {
+            border-color: #b8b8b8;
+        }
+
+        .project-card h3 {
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: #000;
+        }
+
+        .project-card h3 a {
+            border: none;
+            color: #000;
+        }
+
+        .project-card h3 a:hover {
+            opacity: 0.6;
+        }
+
+        .project-card p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .project-badge {
+            display: inline-block;
+            font-size: 11px;
+            color: #666;
+            margin-top: 12px;
+            padding: 4px 8px;
+            background: #f5f5f5;
+            border-radius: 4px;
+        }
+
+        .other-list {
+            list-style: none;
+            margin-top: 16px;
+        }
+
+        .other-list li {
+            margin-bottom: 12px;
+            font-size: 15px;
+            color: #464646;
+        }
+
+        .other-list a {
+            color: #464646;
+        }
+
+        .background p {
+            margin-bottom: 16px;
+        }
+
+        .book-list {
+            list-style: none;
+            margin-top: 16px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .book-list li {
+            font-size: 14px;
+            color: #464646;
+            line-height: 1.5;
+        }
+
+        .book-title {
+            font-weight: 500;
+            color: #1c1c1c;
+        }
+
+        .book-author {
+            color: #666;
+        }
+
+        .contact {
+            margin-top: 45px;
+            padding-top: 22px;
+            border-top: 1px solid #e5e5e5;
+        }
+
+        .contact p {
+            margin-bottom: 16px;
+        }
+
+        .footer-links {
+            margin-top: 22px;
+            padding-top: 17px;
+            border-top: 1px solid #e5e5e5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            display: flex;
+            gap: 24px;
+        }
+
+        .footer-links a {
+            color: #666;
+            font-size: 13px;
+            border: none;
+        }
+
+        .footer-links a:hover {
+            color: #1c1c1c;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-links a {
+            color: #666;
+            font-size: 13px;
+            border: none;
+        }
+
+        .social-links a:hover {
+            color: #1c1c1c;
+        }
+
+        @media (max-width: 768px) {
             body {
-                font-family: Arial, sans-serif;
-                line-height: 1.6;
-                margin: 40px auto;
-                max-width: 800px;
-                padding: 0 20px;
+                padding: 34px 24px;
             }
-            h1,
-            h2 {
-                color: #333;
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 11px;
             }
-            a {
-                color: #0077cc;
-                text-decoration: none;
+
+            h1 {
+                font-size: 28px;
             }
-            a:hover {
-                text-decoration: underline;
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
             }
-            .social-link {
-                margin-right: 15px;
+
+            .footer-links {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
             }
-            .book-list {
-                list-style: none;
-                padding: 0;
+
+            .footer-links ul {
+                flex-direction: column;
+                gap: 12px;
             }
-            .book-list li {
-                margin-bottom: 10px;
+
+            .social-links {
+                flex-direction: column;
+                gap: 12px;
             }
-            .book-title {
-                font-weight: bold;
-            }
-            .book-author {
-                font-style: italic;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Hello, I’m Shashank! 👋🏻</h1>
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Hello, I'm Shashank! 👋🏻</h1>
+        <div class="header-right">
+            <div class="status">
+                <span class="status-dot"></span>
+                <span>Currently in Dubai</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="intro">
         <p>
-            I design, code, and market the products I build. Semi-Nomad. Love
-            meeting people from different walks of life. Early 20s ambition was
-            to build a billion dollar company. Today, I am building a life that
-            allows me to work on anything I enjoy, from anywhere I want,
-            alongside people I enjoy working with.
+            Early 20s ambition was to build a billion dollar company. Today, I'm building a life that allows me to work
+            on anything I enjoy, from anywhere I want, alongside people I enjoy working with.
+        </p>
+
+        <p>
+            I design, code, and market the products I build. Semi-nomad who loves meeting people from different walks of
+            life.
+        </p>
+
+        <p>
+            People say you can't have everything. I disagree. You can build a successful career, have a family you love
+            spending time with, and friends you plan random trips with. You don't need to sacrifice any of it. People
+            tell you otherwise because that's the only life they know. It's your story. Write it however you like.
+        </p>
+    </div>
+
+    <h2>Tinkering with:</h2>
+
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3><a href="https://gopingo.io" target="_blank">Gopingo</a></h3>
+            <p>What if your phone could handle all your business calls? Building an AI communications co-pilot.</p>
+            <span class="project-badge">Current Focus</span>
+        </div>
+
+        <div class="project-card">
+            <h3><a href="https://dxbfi.com" target="_blank">DXBFI</a></h3>
+            <p>Dubai real estate is wild. Making sense of it with data so you don't buy the wrong apartment.</p>
+        </div>
+
+        <div class="project-card">
+            <h3><a href="https://caplane.app" target="_blank">Caplane</a></h3>
+            <p>VCs get 1000s of decks. Most unicorns hide in the noise. Helping them find the signal.</p>
+        </div>
+    </div>
+
+    <h2 class="section-header">Other Work</h2>
+
+    <ul class="other-list">
+        <li><a href="https://tinyapi.co/" target="_blank">Tiny API</a> — Helping developers monetise their code</li>
+        <li><a href="https://187.studio" target="_blank">187 Studio</a> — Helping US founders build elite engineering
+            teams in Bangalore</li>
+        <li><a href="https://187.studio/labs" target="_blank">187 Labs</a> — Founder friendly dev shop with high agency
+        </li>
+    </ul>
+
+    <h2 class="section-header">Background</h2>
+
+    <div class="background">
+        <p>
+            Started my first startup in college and scaled it to $50K. 10+ years of experience as a full-stack engineer,
+            EM & TPM across multiple startups (mostly B2B SaaS). Have run a dev shop for 3+ years shipping 16 products;
+            led a team of 6-8 engineers.
         </p>
         <p>
-            Career wise: I started my first startup in college and scaled it up
-            to $50K. 8+ years of experience as a full-stack engineer, EM & TPM
-            across multiple startups (mostly B2B SaaS). Have run a dev shop for
-            3+ years shipping 16 products; led a team of 6-8 engineers. Prev
-            built tech at 
-            <a href="https://swiggy.com" target="_blank">Swiggy</a>,
-            <a href="https://truebeacon.com" target="_blank">TrueBeacon</a> (by
-            <a href="https://zerodha.com" target="_blank">Zerodha</a>),
-            <a href="https://mpl.live" target="_blank">MPL</a>,
-            <a href="https://fylehq.com" target="_blank">Fyle</a> & Belong.
+            Previously built tech at <a href="https://swiggy.com" target="_blank">Swiggy</a>, <a
+                href="https://truebeacon.com" target="_blank">TrueBeacon</a> (by <a href="https://zerodha.com"
+                target="_blank">Zerodha</a>), <a href="https://mpl.live" target="_blank">MPL</a>, <a
+                href="https://fylehq.com" target="_blank">Fyle</a> & Belong.
         </p>
-        <!-- <p>
-            Tinkering with <a
-                href="https://theshajha.com/serendipitous-experiments/"
-                target="_blank"
-                >Serendipitous Experiments</a
-            >. Life took a new turn at 28 👉🏻
-            <a href="https://theshajha.com/i-turned-28-today/" target="_blank"
-                >I turned 28 today</a
-            >
-        </p> -->
+    </div>
 
-        <p>What I'm upto right now:</p>
-        <ul>
-            <li>
-                🌍 Life Update // 2025: Moved to Dubai!
-            </li>
+    <h2 class="section-header">When I'm not building</h2>
 
-            <!-- <li>
-                🤝 Swiss army knife for engineering teams 👉🏻 <a
-                    href="https://theshajha.com/cto"
-                    target="_blank"
-                    >Fractional CTO</a
-                >
-            </li> -->
-            <li>
-                🌱 Helping developers monetise their code 👉🏻 <a
-                    href="https://tinyapi.co/"
-                    target="_blank"
-                    >tinyapi.co</a
-                >
-            </li>
-            <li>
-                🔭 Helping US founders build elite engineering team in Bangalore, India 👉🏻 <a
-                    href="https://187.studio"
-                    target="_blank"
-                    >187 Studio</a
-                >
-            </li>
-
-            <li>
-                👯 Founder friendly dev shop with high agency 👉🏻 <a
-                    href="https://187.studio/labs"
-                    target="_blank"
-                    >187 Labs</a
-                >
-            </li>
-            <li>
-                📫 Twitter (or X): <a
-                    href="https://twitter.com/theshajha"
-                    target="_blank"
-                    >@theshajha</a
-                >
-            </li>
-
-            <li>
-                ⚡ Fun fact: I did my first solo-paragliding from 8000 feet last
-                year. :D
-            </li>
-        </ul>
-        <h2>Contact me</h2>
+    <div class="background">
         <p>
-            I love meeting new people, and I reply to every email, so <a
-                href="mailto:theshajha+website@gmail.com"
-                >say hello</a
-            >.
+            You'll find me planning random trips with friends, exploring new cities, or deep in conversation with
+            someone I just met. Love meeting people from different walks of life—everyone has a story worth hearing.
         </p>
-        <h2>📚 If I could only read 11 books</h2>
-        <ul class="book-list">
-            <li>
-                <span class="book-title">Meditations</span> by
-                <span class="book-author">Marcus Aurelius</span>
-            </li>
-            <li>
-                <span class="book-title">The Courage To Be Disliked</span> by
-                <span class="book-author">Ichiro Kishimi, Fumitake Koga</span>
-            </li>
-            <li>
-                <span class="book-title">No Rules Rules</span> by
-                <span class="book-author">Reed Hastings, Erin Meyer</span>
-            </li>
-            <li>
-                <span class="book-title">Thinking, Fast and Slow</span> by
-                <span class="book-author">Daniel Kahneman</span>
-            </li>
-            <li>
-                <span class="book-title">Siddhartha</span> by
-                <span class="book-author">Hermann Hesse</span>
-            </li>
-            <li>
-                <span class="book-title">The Great CEO Within</span> by
-                <span class="book-author">Matt Mochary</span>
-            </li>
-            <li>
-                <span class="book-title">The Hard Thing About Hard Things</span>
-                by
-                <span class="book-author">Ben Horowitz</span>
-            </li>
-            <li>
-                <span class="book-title">Skin in the Game</span> by
-                <span class="book-author">Nassim Nicholas Taleb</span>
-            </li>
-            <li>
-                <span class="book-title">Getting Real</span> by
-                <span class="book-author">Susan Campbell</span>
-            </li>
-            <li>
-                <span class="book-title"
-                    >The Subtle Art of Not Giving a F\*ck</span
-                >
-                by
-                <span class="book-author">Mark Manson</span>
-            </li>
-            <li>
-                <span class="book-title">Almanac of Naval Ravikant</span>
-            </li>
-        </ul>
-        <!-- Include any necessary JavaScript below -->
-        <script>
-            // Your JavaScript here if needed
-        </script>
-    </body>
+        <p>
+            Did my first solo-paragliding from 8000 feet last year. Still think about it.
+        </p>
+    </div>
+
+    <h2 class="section-header">Writing</h2>
+
+    <ul class="other-list">
+        <li><a href="pawn-companies/">PAWN Companies</a> — Building profitable, automated businesses</li>
+        <li><a href="serendipitous-experiments/">Serendipitous Experiments</a> — Starting from scratch, day zero</li>
+        <li><a href="i-turned-28-today/">I Turned 28 Today</a> — Life reflections and goals</li>
+    </ul>
+
+    <h2 class="section-header">Books Worth Reading</h2>
+
+    <ul class="book-list">
+        <li>
+            <span class="book-title">Meditations</span> by
+            <span class="book-author">Marcus Aurelius</span>
+        </li>
+        <li>
+            <span class="book-title">The Courage To Be Disliked</span> by
+            <span class="book-author">Ichiro Kishimi, Fumitake Koga</span>
+        </li>
+        <li>
+            <span class="book-title">No Rules Rules</span> by
+            <span class="book-author">Reed Hastings, Erin Meyer</span>
+        </li>
+        <li>
+            <span class="book-title">Thinking, Fast and Slow</span> by
+            <span class="book-author">Daniel Kahneman</span>
+        </li>
+        <li>
+            <span class="book-title">Siddhartha</span> by
+            <span class="book-author">Hermann Hesse</span>
+        </li>
+        <li>
+            <span class="book-title">The Great CEO Within</span> by
+            <span class="book-author">Matt Mochary</span>
+        </li>
+        <li>
+            <span class="book-title">The Hard Thing About Hard Things</span> by
+            <span class="book-author">Ben Horowitz</span>
+        </li>
+        <li>
+            <span class="book-title">Skin in the Game</span> by
+            <span class="book-author">Nassim Nicholas Taleb</span>
+        </li>
+        <li>
+            <span class="book-title">Getting Real</span> by
+            <span class="book-author">Susan Campbell</span>
+        </li>
+        <li>
+            <span class="book-title">The Subtle Art of Not Giving a F*ck</span> by
+            <span class="book-author">Mark Manson</span>
+        </li>
+        <li>
+            <span class="book-title">Almanac of Naval Ravikant</span>
+        </li>
+    </ul>
+
+    <div class="contact">
+        <p>
+            I love meeting new people, and I reply to every email. <a href="mailto:theshajha+website@gmail.com">Say
+                hello</a>.
+        </p>
+
+        <div class="footer-links">
+            <ul>
+                <li><a href="cto.html">Fractional CTO</a></li>
+                <li><a href="https://dxbstart.com" target="_blank">DXBStart</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="https://twitter.com/theshajha" target="_blank">Twitter</a>
+                <a href="https://linkedin.com/in/theshajha" target="_blank">LinkedIn</a>
+                <a href="https://github.com/theshajha" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>

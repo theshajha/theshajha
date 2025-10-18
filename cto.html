@@ -1,270 +1,252 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shashank Jha: Fractional CTO</title>
-    <meta name="description" content="I’m an experienced engineering leader with over a decade of experience in tech. Prev built tech for Swiggy, TrueBeacon (by Zerodha), MPL, Fyle & Belong. I founded Tiny API (part of Antler India Residency) which was voted #1 product of the day on Product Hunt." />
-    <meta name="keywords" content="Shashank Jha, Full-stack Engineer, Product Designer, Entrepreneur" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shashank Jha - Fractional CTO</title>
+    <meta name="description" content="Experienced engineering leader offering fractional CTO services" />
     <meta name="author" content="Shashank Jha" />
     <link rel="icon" href="assets/images/favicon/favicon.ico" type="image/x-icon" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 40px auto;
-            max-width: 800px;
-            padding: 0 20px;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 0.5em;
-            flex-grow: 1;
-        }
-        .header-links {
-            display: flex;
-            align-items: center;
-        }
-        .header-links a {
-            margin-left: 15px;
-            color: #007BFF;
-            text-decoration: none;
-        }
-        .header-links a:hover {
-            text-decoration: underline;
-        }
-        h2, h3, h4 {
-            color: #444;
-        }
-        h2 {
-            font-size: 1.5em;
-            margin-top: 1em;
-        }
-        h3 {
-            font-size: 1.2em;
-            margin-top: 1em;
-        }
-        h4 {
-            font-size: 1em;
-            margin-top: 1em;
-        }
-        p {
-            margin: 0.5em 0;
-        }
-        ul {
-            list-style: none;
+        * {
+            margin: 0;
             padding: 0;
-        }
-        ul li {
-            margin: 0.5em 0;
-        }
-        .section {
-            margin: 2em 0;
+            box-sizing: border-box;
         }
 
-        .intro-container {
-            display: flex;
-            align-items: flex-start;
-            gap: 5%;
-            margin: 1em 0;
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 720px;
+            padding: 56px 32px;
+            color: #1c1c1c;
+            background: #fafafa;
+            font-size: 15px;
+            -webkit-font-smoothing: antialiased;
         }
 
-        .intro-image {
-            flex: 0 0 35%;
-            max-width: 35%;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            height: auto;
-            width: auto;
+        .back-link {
+            display: inline-block;
+            color: #666;
+            font-size: 13px;
+            border: none;
+            margin-bottom: 24px;
         }
 
-        .intro-text {
-            flex: 0 60%;
+        .back-link:hover {
+            color: #1c1c1c;
         }
 
-        .tools-list, .packages-list {
-            margin-top: 1em;
-        }
-        .tools-list ul, .packages-list ul {
-            padding-left: 1.2em;
-        }
-        .tools-list ul li::before {
-            content: "👉🏻";
-            margin-right: 0.5em;
+        header {
+            margin-bottom: 34px;
         }
 
-        .service {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        h1 {
+            font-size: 32px;
+            font-weight: 500;
+            margin-bottom: 0;
+            color: #000;
+            letter-spacing: -0.5px;
         }
 
-        .service h2, .service h3 {
-            margin-top: 0;
+        h2 {
+            font-size: 13px;
+            font-weight: 500;
+            margin-top: 45px;
+            margin-bottom: 14px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
-        .service ul {
-            list-style-type: none;
-            padding-left: 0;
+        p {
+            margin-bottom: 16px;
+            color: #464646;
+            line-height: 1.7;
         }
 
-        .service ul li {
-            margin: 10px 0;
+        a {
+            color: #1c1c1c;
+            text-decoration: none;
+            border-bottom: 1px solid #d4d4d4;
+            transition: border-color 0.15s;
         }
 
-        .services-container, .info-container {
+        a:hover {
+            border-bottom-color: #1c1c1c;
+        }
+
+        .intro {
+            margin-bottom: 34px;
+        }
+
+        .intro p {
+            font-size: 16px;
+            line-height: 1.65;
+            margin-bottom: 16px;
+        }
+
+        .services-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 16px;
-            padding: 12px;
+            margin-top: 14px;
+            margin-bottom: 45px;
         }
 
-        .info-column {
-            padding: 12px;
+        .service-card {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 6px;
+            padding: 20px;
         }
 
-        .tools {
-            flex: 0 60%;
+        .service-card h3 {
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 12px;
+            color: #000;
         }
 
-        .work {
-            flex: 0 40%;
+        .service-card ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
         }
 
-        .info-column ul {
-            list-style-type: none;
-            padding-left: 0;
+        .service-card li {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 8px;
         }
 
-        .info-column ul li {
-            margin: 10px 0;
+        .tools-list {
+            list-style: none;
+            margin-top: 16px;
         }
 
+        .tools-list li {
+            margin-bottom: 12px;
+            font-size: 14px;
+            color: #464646;
+            line-height: 1.6;
+        }
+
+        .cta {
+            margin-top: 45px;
+            padding: 22px;
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .cta p {
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+
+        .cta a {
+            color: #1c1c1c;
+            font-weight: 500;
+        }
 
         @media (max-width: 768px) {
-            .services-container,  .info-container {
+            body {
+                padding: 34px 24px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .services-grid {
                 grid-template-columns: 1fr;
-            }
-
-            .intro-container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .intro-image,
-            .intro-text {
-                max-width: 100%;
-                flex: 1;
-            }
-
-            .intro-image {
-                width: 100%;
-                height: auto;
-                margin-bottom: 1em;
-            }
-
-            .info-column {
-                flex: 1 1 100%;
-                padding: 0px;
+                gap: 12px;
             }
         }
-
     </style>
 </head>
+
 <body>
+    <a href="index.html" class="back-link">← Home</a>
+
     <header>
-        <div>
-            <h1>🤝 Shashank Jha: Fractional CTO</h1>
-            <div class="header-links">
-                <a href="https://theshajha.com">👈 More about me </a>
-                <a href="https://linkedin.com/in/theshajha/" target="_blank">LinkedIn </a>
-                <a href="https://twitter.com/theshajha" target="_blank">Twitter </a>
-                <a href="https://cal.com/theshajha/fractional-cto" target="_blank">Book a Call</a>
-            </div>
-        </div>
+        <h1>Fractional CTO</h1>
     </header>
 
-    <section class="section">
-        <div class="intro-container">
-            <img src="shashank.JPG" alt="Shashank Jha" class="intro-image">
-            <div class="intro-text">
-                <h3>👋 Hey, I’m <b>Shashank</b></h3>
-                <p>I’m an experienced engineering leader with over a decade of experience in tech. Prev built tech for <a href="https://swiggy.com" target="_blank">Swiggy</a>, <a href="https://truebeacon.com" target="_blank">TrueBeacon</a> (by <a href="https://zerodha.com" target="_blank">Zerodha</a>), <a href="https://mpl.live" target="_blank">MPL</a>, <a href="https://fylehq.com" target="_blank">Fyle</a> & Belong. I founded <a href="https://tinyapi.co" target="_blank">Tiny API</a> (part of <a href="https://www.antler.co/" target="_blank">Antler India Residency</a>) which was voted #1 product of the day on <a href="https://www.producthunt.com/products/tiny-api#tiny-api" target="_blank">Product Hunt</a>.</p>
-                <p>I have built and shipped several products since I was 16. I have worked closely with 30+ founders and teams in the past as an engineer, PM and engineering leader to help move the needle.</p>
-            </div>
+    <div class="intro">
+        <p>
+            With tools like Claude Code, I can now ship 3-5x faster than before. But speed doesn't buy you taste. That's
+            where I come in.
+        </p>
+        <p>
+            I bring taste to the table—knowing what to build, when to build it, and how to get the best work out of your
+            team. I've spent 10+ years building tech at <a href="https://swiggy.com" target="_blank">Swiggy</a>, <a
+                href="https://truebeacon.com" target="_blank">TrueBeacon</a> (by <a href="https://zerodha.com"
+                target="_blank">Zerodha</a>), <a href="https://mpl.live" target="_blank">MPL</a>, <a
+                href="https://fylehq.com" target="_blank">Fyle</a> & Belong. Led teams, shipped products, made the hard
+            calls.
+        </p>
+        <p>
+            Success for me means hearing you say, "Relax, Shashank's on it".
+        </p>
+    </div>
+
+    <h2>What We Can Do Together</h2>
+
+    <div class="services-grid">
+        <div class="service-card">
+            <h3>Technology & Product</h3>
+            <ul>
+                <li>Build roadmap, choose stack, and plan sprints</li>
+                <li>Hands-on development as needed</li>
+                <li>Design, build and manage websites</li>
+                <li>Find, hire and manage engineers</li>
+            </ul>
         </div>
-        <p>I handle everything from technical strategy and managing engineers to design, product support, and delivering great products. My aim is to get the job done quickly and well, so your company can succeed.</p>
-        <p>Success for me means hearing you say, "Relax, Shashank's on it".</p>
-    </section>
 
-    <!-- <section class="section">
-        <h2>Why fractional CTO?</h2>
-        <p>As a fractional CTO I bring tech expertise and strategic guidance without the full-time cost. I help you build fast, avoid pitfalls, and drive innovation. Several companies I work with already have full-time CTO. In such a setup I work alongside them to offer additional strategic insights, specialized expertise, and support during peak times, ensuring your tech operations are always optimized.</p>
-    </section> -->
-
-    <section class="section">
-        <h2>💪 What we can do together</h2>
-        <div class="services-container">
-            <div class="service">
-                <h3>💻 Technology & Product</h3>
-                <ul class="tools-list">
-                    <li>👉🏻 Build roadmap, choose stack, and plan sprints</li>
-                    <li>👉🏻 Hands-on development as needed</li>
-                    <li>👉🏻 Design, build and manage websites</li>
-                    <li>👉🏻 Find, hire and manage engineers: full-time, freelancers or dev shops</li>
-                </ul>
-            </div>
-    
-            <div class="service">
-                <h3>👊 AI & LLMs</h3>
-                <ul class="tools-list">
-                    <li>👉🏻 Optimize business operations with LLM tools</li>
-                    <li>👉🏻 Boost team productivity with AI</li>
-                    <li>👉🏻 Identify AI opportunities in your business</li>
-                    <li>👉🏻 Develop custom AI solutions</li>
-                </ul>
-            </div>
-        </div>  
-    </section>
-
-    <section class="section">
-        <div class="info-container">
-            <div class="info-column tools">
-                <h2>⌨️ Tools I Use</h2>
-                <p>Here are the platforms and technologies I'm proficient with.</p>
-                <ul class="tools-list">
-                    <li>💻 <b>Front-end</b>: HTML, CSS, JavaScript, TypeScript, ReactJS, NextJS, Tailwind</li>
-                    <li>🔧 <b>Back-end</b>: Python, Java, Node.js</li>
-                    <li>🌐 <b>Platforms</b>: Shopify, Retool, PostHog, Notion, Atlassian, MixPanel, Intercom, HuggingFace</li>
-                    <li>🎨 <b>Design</b>: Figma, Photoshop, Canva</li>
-                    <li>☁️ <b>Cloud Services / Hosting</b>: AWS (Lambda, RDS, EC2, S3, CloudWatch), Google Cloud (Log Explorer, Firebase), Vercel, Railway</li>
-                    <li>🗄️ <b>Databases</b>: Postgres, MySQL, GraphQL, DynamoDB</li>
-                </ul>
-            </div>
-            <div class="info-column work">
-                <h2>📧 How I Work</h2>
-                <ul class="packages-list">
-                    <li>👉🏻 Weekly check-in call</li>
-                    <li>👉🏻 Full integration with your team tools and processes</li>
-                    <li>👉🏻 Focus on results, not hours</li>
-                </ul>
-                <p>Interested in discussing further?</p>
-                <p><a href="https://cal.com/theshajha/fractional-cto" target="_blank">setup a discovery call 📧</a></p>
-            </div>
+        <div class="service-card">
+            <h3>AI & LLMs</h3>
+            <ul>
+                <li>Optimize business operations with LLM tools</li>
+                <li>Boost team productivity with AI</li>
+                <li>Identify AI opportunities in your business</li>
+                <li>Develop custom AI solutions</li>
+            </ul>
         </div>
-    </section>
-    
-    
+    </div>
+
+    <h2>Tools I Use</h2>
+
+    <ul class="tools-list">
+        <li><strong>Front-end:</strong> HTML, CSS, JavaScript, TypeScript, React, Next.js, Tailwind</li>
+        <li><strong>Back-end:</strong> Python, Java, Node.js</li>
+        <li><strong>Platforms:</strong> Shopify, Retool, PostHog, Notion, Atlassian, MixPanel, Intercom</li>
+        <li><strong>Design:</strong> Figma, Photoshop, Canva</li>
+        <li><strong>Cloud:</strong> AWS (Lambda, RDS, EC2, S3), Google Cloud, Vercel, Railway</li>
+        <li><strong>Databases:</strong> Postgres, MySQL, GraphQL, DynamoDB</li>
+    </ul>
+
+    <h2>How I Work</h2>
+
+    <ul class="tools-list">
+        <li>Weekly check-in call</li>
+        <li>Full integration with your team tools and processes</li>
+        <li>Focus on results, not hours</li>
+    </ul>
+
+    <div class="cta">
+        <p>Interested in working together?</p>
+        <p><a href="https://cal.com/theshajha/fractional-cto" target="_blank">Book a discovery call</a> or <a
+                href="mailto:theshajha+website@gmail.com">send an email</a>.</p>
+    </div>
 </body>
+
 </html>
