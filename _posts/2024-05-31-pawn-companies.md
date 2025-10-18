@@ -7,8 +7,6 @@ description: "If you're looking to build a company that allows you to work on wh
 layout: post
 ---
 
-## PAWN (Profitable, Automated, Well-Run, Nimble) Companies
-
 When I was in my early 20s, my ambition was to build a billion-dollar company. Today, my goal is different. I want to build a life that allows me to work on anything I enjoy, from anywhere I want, alongside people I enjoy working with. I like to call these PAWN companies: Profitable, Automated, Well-Run, and Nimble.
 
 *Profitable*: This isn't about getting rich quickly or relying on external funding. It's about building a business with a sustainable revenue model, one that generates healthy profit margins consistently. A profitable business means financial independence. It means not having to answer to investors or chase the next round of funding. It means being in control of your own destiny.

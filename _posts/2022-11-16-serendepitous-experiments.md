@@ -7,10 +7,6 @@ description: "Today, I am starting things again from scratch. It is day ZERO."
 layout: post
 ---
 
-# Serendipitous Experiments
-
-_16th November, 2022_
-
 Today, I am starting things again from scratch. It is day ZERO.
 
 > You can't connect the dots looking forward; you can only connect them looking backwards. So you have to trust that the dots will somehow connect in your future. You have to trust in something - your gut, destiny, life, karma, whatever. This approach has never let me down, and it has made all the difference in my life.
@@ -31,9 +27,9 @@ As a 16-year-old, I was rich.
 
 When I was 18, I would charge small business money to build websites for them.
 
-Once back in college, I visited my college souvenir store. I didn't buy anything but soon after I started a merchandise business. Selling directly to the college administration. Next, I opened up an e-commerce website where students could shop directly. In less than a year, I had enough to cover my college tuition fee.
+Once back in college, I visited my college souvenir store. I didn't buy anything but soon after I started a merchandise business. Selling directly to the college administration. Shortly after, I opened up an e-commerce website where students could shop directly. In less than a year, I had enough to cover my college tuition fee.
 
-Right after college, I built a platform where people could buy from local stores instead of shopping for the smallest item from Amazon or Flipkart. After ten months of attempting to make this work, I went broke. I still kept pushing. Loaning money to keep the business afloat. Until I realized I had surmounted debt almost the size of what even the best job would pay me in a year.
+After college, I built a platform where people could buy from local stores instead of shopping for the smallest item from Amazon or Flipkart. After ten months of attempting to make this work, I went broke. I still kept pushing. Loaning money to keep the business afloat. Until I realized I had surmounted debt almost the size of what even the best job would pay me in a year.
 
 I quit the idea to find a job that would allow me to pay back those debts. I worked as a software engineer, and then product manager for about three years.
 
@@ -41,15 +37,15 @@ Once I was clear of my debts and had some savings, I felt I was ready to try aga
 
 I started a dev shop to build software for fast-growing startups.
 
-Last month I shut down my dev shop after running it for over two years. While it was always profitable, I always had to be around to make sure it remained that way.
+October 2022 I shut down my dev shop after running it for over two years. While it was always profitable, I always had to be around to make sure it remained that way.
 
 For some profound (or utterly stupid) reason I do not wish to spend the rest of my life working 8-12 hours a day running a business. I don't think I will enjoy that very much.
 
-For the last two months, I've been on a sabbatical. I treated this as a much-needed break to reevaluate what is important to me and what kind of life I want to build for myself. So far I have concluded there are much better ways to achieve all my goals than running a large team for a service business.
+I spent the two months on a sabbatical. I treated this as a much-needed break to reevaluate what is important to me and what kind of life I want to build for myself. So far I have concluded there are much better ways to achieve all my goals than running a large team for a service business.
 
 I have decided to go on a path that brings me the most joy, solving problems and building things. Creating a portfolio of profitable software businesses. Something that would not require me to be around every waking hour.
 
-In the next 12 to 18 months, I am taking the path of experimenting with 4-6 ideas. Spend about 6-8 weeks to build and ship each startup. All these ideas will be under the banner of [Webloom Labs](https://webloominc.com/labs/home?ref=theshajha.com).
+In the next 12 to 18 months, I am taking the path of experimenting with 4-6 ideas. Spend about 6-8 weeks to build and ship each startup.
 
 Before I kickstart any of this, I will need a strong playbook to - **ideate**, **validate**, **design**, **engineer**, **ship**, and **distribute** a product.
 

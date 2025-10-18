@@ -7,10 +7,6 @@ description: "Today, I turned 28. Few lessons I've learnt over the past few year
 layout: post
 ---
 
-# I turned 28 today
-
-_18th July, 2022_
-
 Today, I turned 28. Still processing how to feel about this one.
 
 I treat this day like a date with myself. Remind myself how far I’ve come. Revaluate priorities, notice things that have changed, what made them change and all that kind of stuff.
