@@ -7,8 +7,6 @@ description: "Today, I turned 28. Few lessons I've learnt over the past few year
 layout: post
 ---
 
-Today, I turned 28. Still processing how to feel about this one.
-
 I treat this day like a date with myself. Remind myself how far I’ve come. Revaluate priorities, notice things that have changed, what made them change and all that kind of stuff.
 
 This year, I took a step further and jotted things down. A plan to work on for the following year.
@@ -68,7 +66,5 @@ This year, I want to take it a step further. It’s a WIP, but here’s the gist
 Think of it as a platform for people starting their career in engineering, curious to learn and interact with others and the experienced ones who have already walked the path they are on. A place to explore better engineering practices, tools for engineering productivity, and level up their engineering skillsets. This I understand to not be easy. I am nevertheless optimistic.
 
 I think I’ll call it DevStash. No? Suggest me a better name?
-
----
 
 That’ll all for today. Ciao.
