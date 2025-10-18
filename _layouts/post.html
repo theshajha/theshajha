@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title }} - Shashank Jha</title>
+    <meta name="description" content="{{ page.description }}" />
+    <meta name="author" content="Shashank Jha" />
+    <link rel="icon" href="/assets/images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 680px;
+            padding: 56px 32px;
+            color: #1c1c1c;
+            background: #fafafa;
+            font-size: 15px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #666;
+            font-size: 13px;
+            border: none;
+            margin-bottom: 24px;
+        }
+
+        .back-link:hover {
+            color: #1c1c1c;
+        }
+
+        article {
+            margin-bottom: 45px;
+        }
+
+        .post-header {
+            margin-bottom: 45px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 500;
+            margin-bottom: 16px;
+            color: #000;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+        }
+
+        .post-meta {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .post-description {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+            margin-top: 16px;
+        }
+
+        .post-content h2 {
+            font-size: 24px;
+            font-weight: 500;
+            margin-top: 45px;
+            margin-bottom: 14px;
+            color: #000;
+            letter-spacing: -0.3px;
+        }
+
+        .post-content h3 {
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 34px;
+            margin-bottom: 12px;
+            color: #000;
+        }
+
+        .post-content h4 {
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 22px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .post-content p {
+            margin-bottom: 16px;
+            color: #464646;
+            line-height: 1.7;
+        }
+
+        .post-content a {
+            color: #1c1c1c;
+            text-decoration: none;
+            border-bottom: 1px solid #d4d4d4;
+            transition: border-color 0.15s;
+        }
+
+        .post-content a:hover {
+            border-bottom-color: #1c1c1c;
+        }
+
+        .post-content ul,
+        .post-content ol {
+            margin-bottom: 16px;
+            padding-left: 24px;
+            color: #464646;
+        }
+
+        .post-content li {
+            margin-bottom: 8px;
+            line-height: 1.7;
+        }
+
+        .post-content blockquote {
+            margin: 22px 0;
+            padding-left: 20px;
+            border-left: 3px solid #e5e5e5;
+            color: #555;
+            font-style: italic;
+        }
+
+        .post-content code {
+            background: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.9em;
+            font-family: 'Monaco', 'Courier New', monospace;
+        }
+
+        .post-content pre {
+            background: #f5f5f5;
+            padding: 16px;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin-bottom: 16px;
+        }
+
+        .post-content pre code {
+            background: none;
+            padding: 0;
+        }
+
+        .post-content em {
+            font-style: italic;
+            color: #555;
+        }
+
+        .post-content strong {
+            font-weight: 600;
+            color: #1c1c1c;
+        }
+
+        .about-author {
+            margin-top: 45px;
+            padding: 20px;
+            background: #f5f5f5;
+            border-radius: 6px;
+        }
+
+        .about-author p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .about-author a {
+            color: #1c1c1c;
+            border-bottom: 1px solid #d4d4d4;
+        }
+
+        .about-author a:hover {
+            border-bottom-color: #1c1c1c;
+        }
+
+        .post-footer {
+            margin-top: 45px;
+            padding-top: 22px;
+            border-top: 1px solid #e5e5e5;
+        }
+
+        .post-footer > p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 22px;
+        }
+
+        .post-footer > p a {
+            color: #666;
+            border: none;
+        }
+
+        .post-footer > p a:hover {
+            color: #1c1c1c;
+        }
+
+        .footer-links {
+            padding-top: 17px;
+            border-top: 1px solid #e5e5e5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            display: flex;
+            gap: 24px;
+            padding: 0;
+        }
+
+        .footer-links a {
+            color: #666;
+            font-size: 13px;
+            border: none;
+        }
+
+        .footer-links a:hover {
+            color: #1c1c1c;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 34px 24px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .post-content h2 {
+                font-size: 22px;
+            }
+
+            .post-content h3 {
+                font-size: 16px;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+            }
+
+            .footer-links ul {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .social-links {
+                flex-direction: column;
+                gap: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="/" class="back-link">← Home</a>
+
+    <article>
+        <header class="post-header">
+            <div class="post-meta">{{ page.date | date: "%B %-d, %Y" }}</div>
+            <h1>{{ page.title }}</h1>
+            {% if page.description %}
+            <p class="post-description">{{ page.description }}</p>
+            {% endif %}
+        </header>
+
+        <div class="post-content">
+            {{ content }}
+        </div>
+
+        <div class="about-author">
+            <p>
+                Hey, I'm Shashank. I build products and write about my journey as a founder and engineer.
+                Currently based in Dubai, tinkering with <a href="https://gopingo.io" target="_blank">Gopingo</a>,
+                <a href="https://dxbfi.com" target="_blank">DXBFI</a>, and <a href="https://caplane.app" target="_blank">Caplane</a>.
+                If this resonated with you, <a href="mailto:theshajha+website@gmail.com">say hello</a>.
+            </p>
+        </div>
+    </article>
+
+    <footer class="post-footer">
+        <p><a href="/">← Back to home</a></p>
+
+        <div class="footer-links">
+            <ul>
+                <li><a href="/cto.html">Fractional CTO</a></li>
+                <li><a href="https://dxbstart.com" target="_blank">DXBStart</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="https://twitter.com/theshajha" target="_blank">Twitter</a>
+                <a href="https://linkedin.com/in/theshajha" target="_blank">LinkedIn</a>
+                <a href="https://github.com/theshajha" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
