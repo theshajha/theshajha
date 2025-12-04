@@ -8,7 +8,7 @@ Currently based in Dubai, building in public and exploring what's possible with 
 
 **[Gopingo](https://gopingo.io)** — AI communications co-pilot for small businesses
 **[DXBFI](https://dxbfi.com)** — Real estate analysis platform for Dubai
-**[Caplane](https://caplane.app)** — Helping VCs find signal in the noise
+**[Fitso.me](https://fitso.me)** — Personal wardrobe and lifestyle manager
 
 ## Background
 
