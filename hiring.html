@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shashank Jha - Talent Matchmaker for Startups</title>
+    <meta name="description" content="Helping fast-growing startups hire exceptional senior talent. Not a recruiter—a matchmaker who understands both sides." />
+    <meta name="author" content="Shashank Jha" />
+    <link rel="icon" href="assets/images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 720px;
+            padding: 56px 32px;
+            color: #1c1c1c;
+            background: #fafafa;
+            font-size: 15px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #666;
+            font-size: 13px;
+            border: none;
+            margin-bottom: 24px;
+        }
+
+        .back-link:hover {
+            color: #1c1c1c;
+        }
+
+        header {
+            margin-bottom: 34px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: #000;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            color: #666;
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 13px;
+            font-weight: 500;
+            margin-top: 45px;
+            margin-bottom: 14px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #464646;
+            line-height: 1.7;
+        }
+
+        a {
+            color: #1c1c1c;
+            text-decoration: none;
+            border-bottom: 1px solid #d4d4d4;
+            transition: border-color 0.15s;
+        }
+
+        a:hover {
+            border-bottom-color: #1c1c1c;
+        }
+
+        .intro {
+            margin-bottom: 34px;
+        }
+
+        .intro p {
+            font-size: 16px;
+            line-height: 1.65;
+            margin-bottom: 16px;
+        }
+
+        .highlight-box {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-left: 3px solid #1c1c1c;
+            border-radius: 0 6px 6px 0;
+            padding: 20px 24px;
+            margin: 24px 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            font-size: 15px;
+            color: #464646;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 14px;
+            margin-bottom: 45px;
+        }
+
+        .stat-card {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 6px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 28px;
+            font-weight: 500;
+            color: #000;
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: #666;
+        }
+
+        .problem-list {
+            list-style: none;
+            margin-top: 16px;
+        }
+
+        .problem-list li {
+            margin-bottom: 16px;
+            font-size: 15px;
+            color: #464646;
+            line-height: 1.7;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        .problem-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #999;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-top: 14px;
+            margin-bottom: 45px;
+        }
+
+        .service-card {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 6px;
+            padding: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 12px;
+            color: #000;
+        }
+
+        .service-card p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .approach-list {
+            list-style: none;
+            margin-top: 16px;
+        }
+
+        .approach-list li {
+            margin-bottom: 16px;
+            font-size: 15px;
+            color: #464646;
+            line-height: 1.7;
+        }
+
+        .approach-list strong {
+            color: #1c1c1c;
+        }
+
+        .cta {
+            margin-top: 45px;
+            padding: 22px;
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .cta p {
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+
+        .cta p:last-child {
+            margin-bottom: 0;
+        }
+
+        .cta a {
+            color: #1c1c1c;
+            font-weight: 500;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 16px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #1c1c1c;
+            color: #fff !important;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+
+        .cta-button:hover {
+            background: #333;
+            border: none;
+        }
+
+        .cta-button.secondary {
+            background: #fff;
+            color: #1c1c1c !important;
+            border: 1px solid #e5e5e5;
+        }
+
+        .cta-button.secondary:hover {
+            background: #f5f5f5;
+            border: 1px solid #e5e5e5;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 34px 24px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html" class="back-link">← Home</a>
+
+    <header>
+        <h1>Talent Matchmaker</h1>
+        <p class="subtitle">Helping fast-growing startups hire exceptional senior talent</p>
+    </header>
+
+    <div class="intro">
+        <p>
+            I'm not a recruiter. I'm a matchmaker.
+        </p>
+        <p>
+            After a decade in tech—as a senior engineer, PM, and founder—I've been on both sides of the hiring table. I've built teams, I've been the candidate, and I've felt the pain that exists when exceptional startups and exceptional talent struggle to find each other.
+        </p>
+    </div>
+
+    <div class="highlight-box">
+        <p>
+            Most recruiters optimize for skill fit. But deals fall apart over culture, values, and timing. I focus on the full picture from day one—so both sides stop wasting time.
+        </p>
+    </div>
+
+    <h2>The Numbers</h2>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-number">100+</div>
+            <div class="stat-label">Candidates interviewed</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Years in tech</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">16</div>
+            <div class="stat-label">Products shipped</div>
+        </div>
+    </div>
+
+    <h2>The Problem I Solve</h2>
+
+    <ul class="problem-list">
+        <li><strong>For startups:</strong> You're spending weeks interviewing candidates who look great on paper but don't fit your culture. By the time you realize it, you've lost momentum.</li>
+        <li><strong>For talent:</strong> You're tired of recruiters who don't understand what you actually do. You want to join a rocket ship, not just any company with funding.</li>
+        <li><strong>The gap:</strong> Recruiters focus on keywords and years of experience. The real match—values, ambition, working style—comes too late in the process.</li>
+    </ul>
+
+    <h2>What I Offer</h2>
+
+    <div class="services-grid">
+        <div class="service-card">
+            <h3>For Startups</h3>
+            <p>Access to a curated network of senior talent (5+ years). I only introduce candidates I'd hire myself. No bulk resumes—just people who fit.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>For Talent</h3>
+            <p>Introductions to fast-growing startups where you'll actually thrive. I'll tell you the real story—culture, challenges, growth potential—not just the pitch deck.</p>
+        </div>
+    </div>
+
+    <h2>My Approach</h2>
+
+    <ul class="approach-list">
+        <li><strong>Senior roles only.</strong> I work with experienced professionals (5+ years). No entry-level or bulk hiring.</li>
+        <li><strong>Quality over quantity.</strong> I'd rather make one perfect match than ten mediocre ones.</li>
+        <li><strong>Full context upfront.</strong> Culture fit, compensation expectations, growth trajectory—I address the deal-breakers early.</li>
+        <li><strong>Founder perspective.</strong> I've built and scaled teams. I know what works and what doesn't.</li>
+    </ul>
+
+    <h2>Why Me</h2>
+
+    <ul class="approach-list">
+        <li>Built tech at Swiggy, TrueBeacon (Zerodha), MPL, Fyle. I know what good engineering looks like.</li>
+        <li>Run a dev shop for 3+ years, shipped 16 products. I've hired and managed engineers.</li>
+        <li>Founded a startup in college, scaled it to $50K. I understand the founder's pain.</li>
+        <li>Not in this for volume. I'm building a network of people I genuinely believe in.</li>
+    </ul>
+
+    <div class="cta">
+        <p><strong>For Startups:</strong> Looking to hire senior talent who actually fits?</p>
+        <p><strong>For Talent:</strong> Ready for your next adventure at a fast-growing startup?</p>
+        <div class="cta-buttons">
+            <a href="mailto:theshajha+hiring@gmail.com" class="cta-button">Get in touch</a>
+            <a href="https://talent.theshajha.com" class="cta-button secondary" target="_blank">Browse talent network</a>
+        </div>
+    </div>
+</body>
+
+</html>
