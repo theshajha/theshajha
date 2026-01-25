@@ -3,17 +3,17 @@ title: "I turned 28 today"
 categories: "life-update"
 date: 2022-07-18 06:39:45 -0000
 slug: i-turned-28-today
-description: "Today, I turned 28. Few lessons I've learnt over the past few years."
+description: "Today, I turned 28. A few lessons I've learned over the past few years."
 layout: post
 ---
 
-I treat this day like a date with myself. Remind myself how far I’ve come. Revaluate priorities, notice things that have changed, what made them change and all that kind of stuff.
+I treat this day like a date with myself. A chance to remind myself how far I've come. To re-evaluate priorities, notice what's changed, and understand why.
 
-This year, I took a step further and jotted things down. A plan to work on for the following year.
+This year, I took it a step further and wrote things down. A plan for the year ahead.
 
-The first question I asked myself - **Where am I looking to be before my next birthday?**
+The first question I asked myself: **Where do I want to be before my next birthday?**
 
-Here’s what I ended up scribbling -
+Here's what I ended up with:
 
 - Be more joyous
 - Be financially free
@@ -21,50 +21,52 @@ Here’s what I ended up scribbling -
 
 ## Joy is how I spend my time
 
-My time is something I’ve been very protective of in the last 2 years. I have preferred to have it free than participate in things that do not add up moderately enough to my goals. It’s been helpful and has kept me sane.
+My time is something I've been fiercely protective of over the past two years. I've learned to keep it free rather than fill it with things that don't meaningfully contribute to my goals. It's been helpful. It's kept me sane.
 
-This is quite the opposite of what I used to be. I was the default YES person once. When presented with an opportunity, I was always keen to jump on them. It served me well till a point in time. I was working 12-14 hours a day. When I was not working, I used to think about work. It was a mess, to be honest.
+This is the opposite of who I used to be. I was the default YES person. When presented with an opportunity, I jumped on it without thinking. It served me well—until it didn't. I was working 12-14 hours a day. When I wasn't working, I was thinking about work. It was a mess.
 
-It was then, but I grew more and more protective of my time. Treating it like the most important asset I own. Even above money. Money spent, I can make again. Time wasted, hard to get back.
+That was then. Over time, I grew more protective of my time. I started treating it like my most valuable asset—even above money. Money spent, I can earn again. Time wasted is gone forever.
 
-So, that’s about the past. What am I doing this year about it?
+So what am I doing differently this year?
 
-#### I want to have and build more meaningful relationships
+#### Building more meaningful relationships
 
-I won’t lie; I’ve struggled with this one as far back as I can remember. The person who’s been kind of bad at keeping in touch. Someone who’d not be the first to call someone just to chat. This year, I wish to get better at this.
+I'll be honest—I've struggled with this one for as long as I can remember. I'm the person who's been terrible at keeping in touch. The one who wouldn't call someone just to chat. This year, I want to change that.
 
-This is not to just spend lots of time with people who are close to me. This is more about being more open and involved in the lives of people I care about.
+It's not about spending more time with people close to me. It's about being more present and involved in the lives of people I care about.
 
-It is somewhat selfish of me not to be perceived as an emotionally unavailable person. Hard fact.
+I'll admit—part of this is selfish. I don't want to be perceived as emotionally unavailable. Hard truth, but there it is.
 
-#### Learn and write about things that interest me
+#### Learning and writing about things that interest me
 
-I started this blog to do that and never kept up with it. The idea was simple; I sometimes get very curious about things, and next thing you know, I have 50 tabs open reading on those. A few months down, I’d not remember the specifics and would curse myself for not summarising what I took out of it.
+I started this blog to do exactly that and never kept up with it. The idea was simple: I sometimes get intensely curious about something, and before I know it, I have 50 tabs open. A few months later, I can't remember the specifics and kick myself for not writing it down.
 
-This year, I will change that. I promise. Look at this blog post; consider this the first one in this endeavor. Good progress, I’d say.
+This year, that changes. Consider this post the first step. Good progress, I'd say.
 
-I also thought of the areas that interest me the most, and I can tell you what to expect from my coming posts - **Ideas and ways to build financial freedom, Product Engineering, and my new favorite WEB3**. Well-researched meaningful, and actionable content to help people unlock their potential. Some bits of my personal journey every now and then that I promise to make less boring.
+I've also identified the areas that interest me most. Here's what you can expect from future posts: **ideas for building financial freedom, product engineering, and my newest fascination—Web3**. Well-researched, meaningful, and actionable content to help people unlock their potential. Plus some bits of my personal journey—I promise to make them less boring.
 
-### Get better at financial freedom
+### Financial freedom is a journey, not a destination
 
-The western culture has sold us financial freedom as a state you need to achieve. I like to think of it more as a journey. What I need out of life is evolving. So is the wealth it demands. Every year around this time I readjust what financial freedom means to me. Downsizing where I can, upgrading where I need to.
+Western culture has sold us financial freedom as a state you achieve. I think of it more as a journey. What I need from life is constantly evolving, and so is the wealth it demands. Every year around this time, I reassess what financial freedom means to me. Downsizing where I can, upgrading where I need to.
 
-To give you an example, this year, I decided to not mind when I spend a little extra on travel and experiences. I am drastically downsizing my spend on going out drinking and partying.
+For example, this year I decided not to stress about spending extra on travel and experiences. At the same time, I'm drastically cutting back on nights out drinking and partying.
 
-I should have brought this up before; I run a bootstrapped tech company. Most of the money I make comes from this. I work with 10-12 founders every year to help them go from 0 to 1 in their early-stage product journey. If you’d like to know more, [go here](https://webloominc.com/?ref=theshajha.com).
+I should mention—I run a bootstrapped tech company. Most of my income comes from this. I work with 10-12 founders every year to help them go from zero to one in their early-stage product journey. If you'd like to know more, [go here](https://webloominc.com/?ref=theshajha.com).
 
-Today, most of my take-home is tied to how well Webloom does in a financial year. Say somewhere north of 20% of net revenue. Another 50-60% of revenue is reinvested back in the business or our developer community initiatives (much recent). With my current projection Webloom will have to 1.8x it’s revenue this year for me to call myself financially free to do other things I enjoy. Wish me luck! :crossed_fingers:
+Today, most of my take-home is tied to how well Webloom does in a given year—somewhere north of 20% of net revenue. Another 50-60% gets reinvested back into the business or our developer community initiatives. With my current projections, Webloom needs to 1.8x its revenue this year for me to call myself financially free enough to pursue other things I enjoy. Wish me luck. 🤞
 
-### Create more meaningful impact
+### Creating more meaningful impact
 
-I quite often help companies and products graduating from Webloom to in-house teams hire engineering talent. When a good talent applies to Webloom and we cannot hire them, I get them in touch with other founders who are hiring for similar roles.
+I often help companies and products graduating from Webloom build their in-house teams. When talented engineers apply to Webloom and we can't hire them, I connect them with other founders hiring for similar roles.
 
-Personally, I love doing this. It’s my way of feeling involved and being a small part of multiple stories. It also allows me to meet and work with some very talented people.
+I genuinely love doing this. It's my way of staying involved and being a small part of multiple stories. It also lets me meet and work with some incredibly talented people.
 
-This year, I want to take it a step further. It’s a WIP, but here’s the gist of it. I am working on the first draft for a new initiative at Webloom - **a collaborative engineering community**.
+This year, I want to take it further. It's still a work in progress, but here's the gist: I'm working on a new initiative at Webloom—**a collaborative engineering community**.
 
-Think of it as a platform for people starting their career in engineering, curious to learn and interact with others and the experienced ones who have already walked the path they are on. A place to explore better engineering practices, tools for engineering productivity, and level up their engineering skillsets. This I understand to not be easy. I am nevertheless optimistic.
+Think of it as a platform for people starting their engineering careers who are curious to learn and interact with others, and for experienced engineers who've already walked the path. A place to explore better engineering practices, discover tools for productivity, and level up technical skills.
 
-I think I’ll call it DevStash. No? Suggest me a better name?
+I know this won't be easy. But I'm optimistic.
 
-That’ll all for today. Ciao.
+I think I'll call it DevStash. No? Suggest me a better name.
+
+That's all for today. Ciao.
