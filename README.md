@@ -6,9 +6,9 @@ Currently based in Dubai, building in public and exploring what's possible with 
 
 ## What I'm Building
 
-**[Gopingo](https://gopingo.io)** — AI communications co-pilot for small businesses
-**[DXBFI](https://dxbfi.com)** — Real estate analysis platform for Dubai
-**[Fitso.me](https://fitso.me)** — Personal wardrobe and lifestyle manager
+**[Gopingo](https://gopingo.io)** - AI communications co-pilot for small businesses
+**[DXBFI](https://dxbfi.com)** - Real estate analysis platform for Dubai
+**[Fitso.me](https://fitso.me)** - Personal wardrobe and lifestyle manager
 
 ## Background
 
@@ -22,6 +22,6 @@ TypeScript, React, Next.js, Python, Node.js, Postgres, AWS, Vercel
 
 ## More
 
-- 🌐 [theshajha.com](https://theshajha.com) — Personal site
-- 🐦 [@theshajha](https://twitter.com/theshajha) — Twitter
+- 🌐 [theshajha.com](https://theshajha.com) - Personal site
+- 🐦 [@theshajha](https://twitter.com/theshajha) - Twitter
 - 📧 <theshajha@gmail.com>

@@ -61,7 +61,7 @@ I often help companies and products graduating from Webloom build their in-house
 
 I genuinely love doing this. It's my way of staying involved and being a small part of multiple stories. It also lets me meet and work with some incredibly talented people.
 
-This year, I want to take it further. It's still a work in progress, but here's the gist: I'm working on a new initiative at Webloom—**a collaborative engineering community**.
+This year, I want to take it further. It's still a work in progress, but here's the gist: I'm working on a new initiative at Webloom: **a collaborative engineering community**.
 
 Think of it as a platform for people starting their engineering careers who are curious to learn and interact with others, and for experienced engineers who've already walked the path. A place to explore better engineering practices, discover tools for productivity, and level up technical skills.
 
