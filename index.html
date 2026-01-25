@@ -255,114 +255,52 @@
             color: #1c1c1c;
         }
 
-        /* Travel Map Styles */
-        .travel-map-container {
-            margin-top: 16px;
-            position: relative;
-            width: 100%;
-            aspect-ratio: 2 / 1;
-            background: #fff;
-            border: 1px solid #e5e5e5;
-            border-radius: 6px;
-            overflow: hidden;
-        }
-
-        .travel-map {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-
-        .travel-map svg {
-            width: 100%;
-            height: 100%;
-        }
-
-        .map-dot {
-            fill: #e0e0e0;
-        }
-
-        .location-dot {
-            position: absolute;
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            transform: translate(-50%, -50%);
-            cursor: pointer;
-            transition: transform 0.15s, box-shadow 0.15s;
-            z-index: 2;
-        }
-
-        .location-dot.visited {
-            background: #10b981;
-        }
-
-        .location-dot.wishlist {
-            background: #f59e0b;
-        }
-
-        .location-dot:hover {
-            transform: translate(-50%, -50%) scale(1.5);
-            box-shadow: 0 0 0 3px rgba(0,0,0,0.1);
-        }
-
-        .location-dot .tooltip {
-            position: absolute;
-            bottom: calc(100% + 8px);
-            left: 50%;
-            transform: translateX(-50%);
-            background: #1c1c1c;
-            color: #fff;
-            padding: 6px 10px;
-            border-radius: 4px;
-            font-size: 12px;
-            white-space: nowrap;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.15s, visibility 0.15s;
-            pointer-events: none;
-        }
-
-        .location-dot .tooltip::after {
-            content: '';
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            border: 5px solid transparent;
-            border-top-color: #1c1c1c;
-        }
-
-        .location-dot:hover .tooltip {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .map-legend {
-            display: flex;
-            gap: 20px;
+        /* Travel List Styles */
+        .travel-section {
             margin-top: 12px;
-            font-size: 12px;
-            color: #666;
         }
 
-        .legend-item {
+        .travel-category {
+            margin-bottom: 20px;
+        }
+
+        .travel-category h3 {
+            font-size: 13px;
+            font-weight: 500;
+            color: #666;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .travel-places {
             display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .travel-place {
+            display: inline-flex;
             align-items: center;
             gap: 6px;
+            padding: 6px 12px;
+            background: #f5f5f5;
+            border-radius: 20px;
+            font-size: 13px;
+            color: #333;
         }
 
-        .legend-dot {
-            width: 8px;
-            height: 8px;
+        .travel-place .dot {
+            width: 6px;
+            height: 6px;
             border-radius: 50%;
         }
 
-        .legend-dot.visited {
+        .travel-place.visited .dot {
             background: #10b981;
         }
 
-        .legend-dot.wishlist {
+        .travel-place.wishlist .dot {
             background: #f59e0b;
         }
 
@@ -507,150 +445,31 @@
 
     <h2 class="section-header">Places I've been</h2>
 
-    <div class="travel-map-container">
-        <div class="travel-map">
-            <!-- Dense dotted world map -->
-            <svg viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet">
-                <!-- North America - Dense -->
-                <circle cx="80" cy="80" r="1.5" class="map-dot"/><circle cx="90" cy="75" r="1.5" class="map-dot"/><circle cx="100" cy="70" r="1.5" class="map-dot"/><circle cx="110" cy="72" r="1.5" class="map-dot"/><circle cx="120" cy="75" r="1.5" class="map-dot"/>
-                <circle cx="85" cy="90" r="1.5" class="map-dot"/><circle cx="95" cy="85" r="1.5" class="map-dot"/><circle cx="105" cy="82" r="1.5" class="map-dot"/><circle cx="115" cy="85" r="1.5" class="map-dot"/><circle cx="125" cy="88" r="1.5" class="map-dot"/>
-                <circle cx="90" cy="100" r="1.5" class="map-dot"/><circle cx="100" cy="95" r="1.5" class="map-dot"/><circle cx="110" cy="92" r="1.5" class="map-dot"/><circle cx="120" cy="95" r="1.5" class="map-dot"/><circle cx="130" cy="98" r="1.5" class="map-dot"/><circle cx="140" cy="100" r="1.5" class="map-dot"/>
-                <circle cx="95" cy="110" r="1.5" class="map-dot"/><circle cx="105" cy="105" r="1.5" class="map-dot"/><circle cx="115" cy="102" r="1.5" class="map-dot"/><circle cx="125" cy="105" r="1.5" class="map-dot"/><circle cx="135" cy="108" r="1.5" class="map-dot"/><circle cx="145" cy="110" r="1.5" class="map-dot"/><circle cx="155" cy="108" r="1.5" class="map-dot"/>
-                <circle cx="100" cy="120" r="1.5" class="map-dot"/><circle cx="110" cy="115" r="1.5" class="map-dot"/><circle cx="120" cy="112" r="1.5" class="map-dot"/><circle cx="130" cy="115" r="1.5" class="map-dot"/><circle cx="140" cy="118" r="1.5" class="map-dot"/><circle cx="150" cy="120" r="1.5" class="map-dot"/><circle cx="160" cy="118" r="1.5" class="map-dot"/><circle cx="170" cy="115" r="1.5" class="map-dot"/>
-                <circle cx="105" cy="130" r="1.5" class="map-dot"/><circle cx="115" cy="125" r="1.5" class="map-dot"/><circle cx="125" cy="122" r="1.5" class="map-dot"/><circle cx="135" cy="125" r="1.5" class="map-dot"/><circle cx="145" cy="128" r="1.5" class="map-dot"/><circle cx="155" cy="130" r="1.5" class="map-dot"/><circle cx="165" cy="128" r="1.5" class="map-dot"/><circle cx="175" cy="125" r="1.5" class="map-dot"/><circle cx="185" cy="128" r="1.5" class="map-dot"/>
-                <circle cx="110" cy="140" r="1.5" class="map-dot"/><circle cx="120" cy="135" r="1.5" class="map-dot"/><circle cx="130" cy="138" r="1.5" class="map-dot"/><circle cx="140" cy="140" r="1.5" class="map-dot"/><circle cx="150" cy="142" r="1.5" class="map-dot"/><circle cx="160" cy="140" r="1.5" class="map-dot"/><circle cx="170" cy="138" r="1.5" class="map-dot"/><circle cx="180" cy="140" r="1.5" class="map-dot"/><circle cx="190" cy="138" r="1.5" class="map-dot"/>
-                <circle cx="115" cy="150" r="1.5" class="map-dot"/><circle cx="125" cy="148" r="1.5" class="map-dot"/><circle cx="135" cy="150" r="1.5" class="map-dot"/><circle cx="145" cy="152" r="1.5" class="map-dot"/><circle cx="155" cy="150" r="1.5" class="map-dot"/><circle cx="165" cy="148" r="1.5" class="map-dot"/><circle cx="175" cy="150" r="1.5" class="map-dot"/>
-                <circle cx="130" cy="160" r="1.5" class="map-dot"/><circle cx="140" cy="162" r="1.5" class="map-dot"/><circle cx="150" cy="160" r="1.5" class="map-dot"/><circle cx="160" cy="158" r="1.5" class="map-dot"/><circle cx="170" cy="160" r="1.5" class="map-dot"/>
-                <circle cx="145" cy="170" r="1.5" class="map-dot"/><circle cx="155" cy="172" r="1.5" class="map-dot"/><circle cx="165" cy="175" r="1.5" class="map-dot"/>
-                <!-- Central America -->
-                <circle cx="160" cy="185" r="1.5" class="map-dot"/><circle cx="170" cy="188" r="1.5" class="map-dot"/><circle cx="175" cy="195" r="1.5" class="map-dot"/>
-                <!-- South America - Dense -->
-                <circle cx="200" cy="210" r="1.5" class="map-dot"/><circle cx="210" cy="205" r="1.5" class="map-dot"/><circle cx="220" cy="210" r="1.5" class="map-dot"/><circle cx="230" cy="215" r="1.5" class="map-dot"/><circle cx="240" cy="210" r="1.5" class="map-dot"/>
-                <circle cx="205" cy="220" r="1.5" class="map-dot"/><circle cx="215" cy="218" r="1.5" class="map-dot"/><circle cx="225" cy="222" r="1.5" class="map-dot"/><circle cx="235" cy="225" r="1.5" class="map-dot"/><circle cx="245" cy="220" r="1.5" class="map-dot"/><circle cx="255" cy="218" r="1.5" class="map-dot"/>
-                <circle cx="210" cy="235" r="1.5" class="map-dot"/><circle cx="220" cy="232" r="1.5" class="map-dot"/><circle cx="230" cy="238" r="1.5" class="map-dot"/><circle cx="240" cy="240" r="1.5" class="map-dot"/><circle cx="250" cy="235" r="1.5" class="map-dot"/>
-                <circle cx="215" cy="250" r="1.5" class="map-dot"/><circle cx="225" cy="248" r="1.5" class="map-dot"/><circle cx="235" cy="252" r="1.5" class="map-dot"/><circle cx="245" cy="255" r="1.5" class="map-dot"/>
-                <circle cx="220" cy="265" r="1.5" class="map-dot"/><circle cx="230" cy="262" r="1.5" class="map-dot"/><circle cx="240" cy="268" r="1.5" class="map-dot"/>
-                <circle cx="225" cy="280" r="1.5" class="map-dot"/><circle cx="235" cy="278" r="1.5" class="map-dot"/>
-                <circle cx="225" cy="295" r="1.5" class="map-dot"/><circle cx="235" cy="292" r="1.5" class="map-dot"/>
-                <circle cx="230" cy="310" r="1.5" class="map-dot"/><circle cx="225" cy="325" r="1.5" class="map-dot"/>
-                <!-- Europe - Dense -->
-                <circle cx="355" cy="85" r="1.5" class="map-dot"/><circle cx="365" cy="82" r="1.5" class="map-dot"/><circle cx="375" cy="80" r="1.5" class="map-dot"/><circle cx="385" cy="78" r="1.5" class="map-dot"/><circle cx="395" cy="80" r="1.5" class="map-dot"/>
-                <circle cx="350" cy="95" r="1.5" class="map-dot"/><circle cx="360" cy="92" r="1.5" class="map-dot"/><circle cx="370" cy="90" r="1.5" class="map-dot"/><circle cx="380" cy="88" r="1.5" class="map-dot"/><circle cx="390" cy="90" r="1.5" class="map-dot"/><circle cx="400" cy="92" r="1.5" class="map-dot"/><circle cx="410" cy="90" r="1.5" class="map-dot"/>
-                <circle cx="345" cy="105" r="1.5" class="map-dot"/><circle cx="355" cy="102" r="1.5" class="map-dot"/><circle cx="365" cy="100" r="1.5" class="map-dot"/><circle cx="375" cy="98" r="1.5" class="map-dot"/><circle cx="385" cy="100" r="1.5" class="map-dot"/><circle cx="395" cy="102" r="1.5" class="map-dot"/><circle cx="405" cy="100" r="1.5" class="map-dot"/><circle cx="415" cy="102" r="1.5" class="map-dot"/><circle cx="425" cy="100" r="1.5" class="map-dot"/>
-                <circle cx="350" cy="115" r="1.5" class="map-dot"/><circle cx="360" cy="112" r="1.5" class="map-dot"/><circle cx="370" cy="110" r="1.5" class="map-dot"/><circle cx="380" cy="108" r="1.5" class="map-dot"/><circle cx="390" cy="110" r="1.5" class="map-dot"/><circle cx="400" cy="112" r="1.5" class="map-dot"/><circle cx="410" cy="110" r="1.5" class="map-dot"/><circle cx="420" cy="112" r="1.5" class="map-dot"/><circle cx="430" cy="110" r="1.5" class="map-dot"/><circle cx="440" cy="108" r="1.5" class="map-dot"/>
-                <circle cx="355" cy="125" r="1.5" class="map-dot"/><circle cx="365" cy="122" r="1.5" class="map-dot"/><circle cx="375" cy="120" r="1.5" class="map-dot"/><circle cx="385" cy="122" r="1.5" class="map-dot"/><circle cx="395" cy="125" r="1.5" class="map-dot"/><circle cx="405" cy="122" r="1.5" class="map-dot"/><circle cx="415" cy="125" r="1.5" class="map-dot"/><circle cx="425" cy="122" r="1.5" class="map-dot"/><circle cx="435" cy="120" r="1.5" class="map-dot"/><circle cx="445" cy="118" r="1.5" class="map-dot"/>
-                <circle cx="365" cy="135" r="1.5" class="map-dot"/><circle cx="375" cy="132" r="1.5" class="map-dot"/><circle cx="385" cy="135" r="1.5" class="map-dot"/><circle cx="395" cy="138" r="1.5" class="map-dot"/><circle cx="405" cy="135" r="1.5" class="map-dot"/><circle cx="415" cy="138" r="1.5" class="map-dot"/><circle cx="425" cy="135" r="1.5" class="map-dot"/><circle cx="435" cy="132" r="1.5" class="map-dot"/>
-                <circle cx="375" cy="145" r="1.5" class="map-dot"/><circle cx="385" cy="148" r="1.5" class="map-dot"/><circle cx="395" cy="150" r="1.5" class="map-dot"/><circle cx="405" cy="148" r="1.5" class="map-dot"/><circle cx="415" cy="150" r="1.5" class="map-dot"/>
-                <!-- Africa - Dense -->
-                <circle cx="380" cy="175" r="1.5" class="map-dot"/><circle cx="390" cy="172" r="1.5" class="map-dot"/><circle cx="400" cy="175" r="1.5" class="map-dot"/><circle cx="410" cy="178" r="1.5" class="map-dot"/><circle cx="420" cy="175" r="1.5" class="map-dot"/><circle cx="430" cy="172" r="1.5" class="map-dot"/><circle cx="440" cy="175" r="1.5" class="map-dot"/>
-                <circle cx="375" cy="188" r="1.5" class="map-dot"/><circle cx="385" cy="185" r="1.5" class="map-dot"/><circle cx="395" cy="188" r="1.5" class="map-dot"/><circle cx="405" cy="190" r="1.5" class="map-dot"/><circle cx="415" cy="188" r="1.5" class="map-dot"/><circle cx="425" cy="185" r="1.5" class="map-dot"/><circle cx="435" cy="188" r="1.5" class="map-dot"/><circle cx="445" cy="185" r="1.5" class="map-dot"/>
-                <circle cx="378" cy="200" r="1.5" class="map-dot"/><circle cx="388" cy="198" r="1.5" class="map-dot"/><circle cx="398" cy="200" r="1.5" class="map-dot"/><circle cx="408" cy="202" r="1.5" class="map-dot"/><circle cx="418" cy="200" r="1.5" class="map-dot"/><circle cx="428" cy="198" r="1.5" class="map-dot"/><circle cx="438" cy="200" r="1.5" class="map-dot"/><circle cx="448" cy="198" r="1.5" class="map-dot"/>
-                <circle cx="382" cy="215" r="1.5" class="map-dot"/><circle cx="392" cy="212" r="1.5" class="map-dot"/><circle cx="402" cy="215" r="1.5" class="map-dot"/><circle cx="412" cy="218" r="1.5" class="map-dot"/><circle cx="422" cy="215" r="1.5" class="map-dot"/><circle cx="432" cy="212" r="1.5" class="map-dot"/><circle cx="442" cy="215" r="1.5" class="map-dot"/>
-                <circle cx="388" cy="230" r="1.5" class="map-dot"/><circle cx="398" cy="228" r="1.5" class="map-dot"/><circle cx="408" cy="230" r="1.5" class="map-dot"/><circle cx="418" cy="232" r="1.5" class="map-dot"/><circle cx="428" cy="230" r="1.5" class="map-dot"/><circle cx="438" cy="228" r="1.5" class="map-dot"/>
-                <circle cx="395" cy="245" r="1.5" class="map-dot"/><circle cx="405" cy="242" r="1.5" class="map-dot"/><circle cx="415" cy="245" r="1.5" class="map-dot"/><circle cx="425" cy="248" r="1.5" class="map-dot"/><circle cx="435" cy="245" r="1.5" class="map-dot"/>
-                <circle cx="402" cy="260" r="1.5" class="map-dot"/><circle cx="412" cy="258" r="1.5" class="map-dot"/><circle cx="422" cy="260" r="1.5" class="map-dot"/><circle cx="432" cy="262" r="1.5" class="map-dot"/>
-                <circle cx="410" cy="275" r="1.5" class="map-dot"/><circle cx="420" cy="272" r="1.5" class="map-dot"/><circle cx="430" cy="275" r="1.5" class="map-dot"/>
-                <circle cx="418" cy="290" r="1.5" class="map-dot"/><circle cx="428" cy="288" r="1.5" class="map-dot"/>
-                <!-- Middle East - Dense -->
-                <circle cx="455" cy="145" r="1.5" class="map-dot"/><circle cx="465" cy="142" r="1.5" class="map-dot"/><circle cx="475" cy="145" r="1.5" class="map-dot"/><circle cx="485" cy="148" r="1.5" class="map-dot"/>
-                <circle cx="458" cy="158" r="1.5" class="map-dot"/><circle cx="468" cy="155" r="1.5" class="map-dot"/><circle cx="478" cy="158" r="1.5" class="map-dot"/><circle cx="488" cy="160" r="1.5" class="map-dot"/><circle cx="498" cy="158" r="1.5" class="map-dot"/>
-                <circle cx="462" cy="170" r="1.5" class="map-dot"/><circle cx="472" cy="168" r="1.5" class="map-dot"/><circle cx="482" cy="170" r="1.5" class="map-dot"/><circle cx="492" cy="172" r="1.5" class="map-dot"/>
-                <!-- India/South Asia - Dense -->
-                <circle cx="520" cy="135" r="1.5" class="map-dot"/><circle cx="530" cy="132" r="1.5" class="map-dot"/><circle cx="540" cy="135" r="1.5" class="map-dot"/>
-                <circle cx="515" cy="148" r="1.5" class="map-dot"/><circle cx="525" cy="145" r="1.5" class="map-dot"/><circle cx="535" cy="148" r="1.5" class="map-dot"/><circle cx="545" cy="150" r="1.5" class="map-dot"/><circle cx="555" cy="148" r="1.5" class="map-dot"/>
-                <circle cx="520" cy="162" r="1.5" class="map-dot"/><circle cx="530" cy="158" r="1.5" class="map-dot"/><circle cx="540" cy="162" r="1.5" class="map-dot"/><circle cx="550" cy="165" r="1.5" class="map-dot"/><circle cx="560" cy="162" r="1.5" class="map-dot"/><circle cx="570" cy="160" r="1.5" class="map-dot"/>
-                <circle cx="525" cy="175" r="1.5" class="map-dot"/><circle cx="535" cy="172" r="1.5" class="map-dot"/><circle cx="545" cy="175" r="1.5" class="map-dot"/><circle cx="555" cy="178" r="1.5" class="map-dot"/><circle cx="565" cy="175" r="1.5" class="map-dot"/><circle cx="575" cy="172" r="1.5" class="map-dot"/>
-                <circle cx="530" cy="188" r="1.5" class="map-dot"/><circle cx="540" cy="185" r="1.5" class="map-dot"/><circle cx="550" cy="188" r="1.5" class="map-dot"/><circle cx="560" cy="190" r="1.5" class="map-dot"/><circle cx="570" cy="188" r="1.5" class="map-dot"/>
-                <circle cx="535" cy="200" r="1.5" class="map-dot"/><circle cx="545" cy="198" r="1.5" class="map-dot"/><circle cx="555" cy="200" r="1.5" class="map-dot"/><circle cx="565" cy="202" r="1.5" class="map-dot"/>
-                <circle cx="540" cy="215" r="1.5" class="map-dot"/><circle cx="550" cy="212" r="1.5" class="map-dot"/><circle cx="560" cy="215" r="1.5" class="map-dot"/>
-                <circle cx="555" cy="230" r="1.5" class="map-dot"/>
-                <!-- Sri Lanka -->
-                <circle cx="565" cy="235" r="1.5" class="map-dot"/><circle cx="568" cy="242" r="1.5" class="map-dot"/>
-                <!-- Southeast Asia - Dense -->
-                <circle cx="580" cy="165" r="1.5" class="map-dot"/><circle cx="590" cy="162" r="1.5" class="map-dot"/><circle cx="600" cy="165" r="1.5" class="map-dot"/><circle cx="610" cy="168" r="1.5" class="map-dot"/>
-                <circle cx="585" cy="178" r="1.5" class="map-dot"/><circle cx="595" cy="175" r="1.5" class="map-dot"/><circle cx="605" cy="178" r="1.5" class="map-dot"/><circle cx="615" cy="180" r="1.5" class="map-dot"/><circle cx="625" cy="178" r="1.5" class="map-dot"/>
-                <circle cx="590" cy="192" r="1.5" class="map-dot"/><circle cx="600" cy="188" r="1.5" class="map-dot"/><circle cx="610" cy="192" r="1.5" class="map-dot"/><circle cx="620" cy="195" r="1.5" class="map-dot"/><circle cx="630" cy="192" r="1.5" class="map-dot"/>
-                <circle cx="595" cy="205" r="1.5" class="map-dot"/><circle cx="605" cy="202" r="1.5" class="map-dot"/><circle cx="615" cy="205" r="1.5" class="map-dot"/><circle cx="625" cy="208" r="1.5" class="map-dot"/><circle cx="635" cy="205" r="1.5" class="map-dot"/>
-                <circle cx="600" cy="218" r="1.5" class="map-dot"/><circle cx="610" cy="215" r="1.5" class="map-dot"/><circle cx="620" cy="218" r="1.5" class="map-dot"/><circle cx="630" cy="220" r="1.5" class="map-dot"/>
-                <circle cx="610" cy="232" r="1.5" class="map-dot"/><circle cx="620" cy="230" r="1.5" class="map-dot"/><circle cx="630" cy="235" r="1.5" class="map-dot"/><circle cx="640" cy="238" r="1.5" class="map-dot"/>
-                <!-- Indonesia -->
-                <circle cx="615" cy="248" r="1.5" class="map-dot"/><circle cx="625" cy="245" r="1.5" class="map-dot"/><circle cx="635" cy="248" r="1.5" class="map-dot"/><circle cx="645" cy="250" r="1.5" class="map-dot"/><circle cx="655" cy="248" r="1.5" class="map-dot"/><circle cx="665" cy="250" r="1.5" class="map-dot"/><circle cx="675" cy="252" r="1.5" class="map-dot"/>
-                <!-- East Asia - Dense -->
-                <circle cx="620" cy="125" r="1.5" class="map-dot"/><circle cx="630" cy="122" r="1.5" class="map-dot"/><circle cx="640" cy="125" r="1.5" class="map-dot"/><circle cx="650" cy="128" r="1.5" class="map-dot"/><circle cx="660" cy="125" r="1.5" class="map-dot"/><circle cx="670" cy="122" r="1.5" class="map-dot"/>
-                <circle cx="625" cy="138" r="1.5" class="map-dot"/><circle cx="635" cy="135" r="1.5" class="map-dot"/><circle cx="645" cy="138" r="1.5" class="map-dot"/><circle cx="655" cy="140" r="1.5" class="map-dot"/><circle cx="665" cy="138" r="1.5" class="map-dot"/><circle cx="675" cy="135" r="1.5" class="map-dot"/><circle cx="685" cy="138" r="1.5" class="map-dot"/>
-                <circle cx="630" cy="150" r="1.5" class="map-dot"/><circle cx="640" cy="148" r="1.5" class="map-dot"/><circle cx="650" cy="150" r="1.5" class="map-dot"/><circle cx="660" cy="152" r="1.5" class="map-dot"/><circle cx="670" cy="150" r="1.5" class="map-dot"/><circle cx="680" cy="148" r="1.5" class="map-dot"/><circle cx="690" cy="150" r="1.5" class="map-dot"/>
-                <circle cx="645" cy="162" r="1.5" class="map-dot"/><circle cx="655" cy="160" r="1.5" class="map-dot"/><circle cx="665" cy="162" r="1.5" class="map-dot"/><circle cx="675" cy="165" r="1.5" class="map-dot"/><circle cx="685" cy="162" r="1.5" class="map-dot"/>
-                <!-- Japan -->
-                <circle cx="700" cy="140" r="1.5" class="map-dot"/><circle cx="705" cy="150" r="1.5" class="map-dot"/><circle cx="702" cy="160" r="1.5" class="map-dot"/>
-                <!-- Australia - Dense -->
-                <circle cx="640" cy="280" r="1.5" class="map-dot"/><circle cx="650" cy="278" r="1.5" class="map-dot"/><circle cx="660" cy="280" r="1.5" class="map-dot"/><circle cx="670" cy="282" r="1.5" class="map-dot"/><circle cx="680" cy="280" r="1.5" class="map-dot"/><circle cx="690" cy="278" r="1.5" class="map-dot"/><circle cx="700" cy="280" r="1.5" class="map-dot"/>
-                <circle cx="645" cy="292" r="1.5" class="map-dot"/><circle cx="655" cy="290" r="1.5" class="map-dot"/><circle cx="665" cy="292" r="1.5" class="map-dot"/><circle cx="675" cy="295" r="1.5" class="map-dot"/><circle cx="685" cy="292" r="1.5" class="map-dot"/><circle cx="695" cy="290" r="1.5" class="map-dot"/><circle cx="705" cy="292" r="1.5" class="map-dot"/>
-                <circle cx="650" cy="305" r="1.5" class="map-dot"/><circle cx="660" cy="302" r="1.5" class="map-dot"/><circle cx="670" cy="305" r="1.5" class="map-dot"/><circle cx="680" cy="308" r="1.5" class="map-dot"/><circle cx="690" cy="305" r="1.5" class="map-dot"/><circle cx="700" cy="302" r="1.5" class="map-dot"/>
-                <circle cx="660" cy="318" r="1.5" class="map-dot"/><circle cx="670" cy="315" r="1.5" class="map-dot"/><circle cx="680" cy="318" r="1.5" class="map-dot"/><circle cx="690" cy="320" r="1.5" class="map-dot"/>
-                <!-- Russia -->
-                <circle cx="450" cy="75" r="1.5" class="map-dot"/><circle cx="470" cy="72" r="1.5" class="map-dot"/><circle cx="490" cy="75" r="1.5" class="map-dot"/><circle cx="510" cy="72" r="1.5" class="map-dot"/><circle cx="530" cy="75" r="1.5" class="map-dot"/><circle cx="550" cy="72" r="1.5" class="map-dot"/><circle cx="570" cy="75" r="1.5" class="map-dot"/><circle cx="590" cy="72" r="1.5" class="map-dot"/><circle cx="610" cy="75" r="1.5" class="map-dot"/>
-                <circle cx="455" cy="88" r="1.5" class="map-dot"/><circle cx="475" cy="85" r="1.5" class="map-dot"/><circle cx="495" cy="88" r="1.5" class="map-dot"/><circle cx="515" cy="85" r="1.5" class="map-dot"/><circle cx="535" cy="88" r="1.5" class="map-dot"/><circle cx="555" cy="85" r="1.5" class="map-dot"/><circle cx="575" cy="88" r="1.5" class="map-dot"/><circle cx="595" cy="85" r="1.5" class="map-dot"/>
-                <circle cx="460" cy="100" r="1.5" class="map-dot"/><circle cx="480" cy="98" r="1.5" class="map-dot"/><circle cx="500" cy="100" r="1.5" class="map-dot"/><circle cx="520" cy="98" r="1.5" class="map-dot"/><circle cx="540" cy="100" r="1.5" class="map-dot"/><circle cx="560" cy="98" r="1.5" class="map-dot"/><circle cx="580" cy="100" r="1.5" class="map-dot"/>
-            </svg>
-            
-            <!-- Visited locations (green) -->
-            <div class="location-dot visited" style="left: 14%; top: 38%;">
-                <span class="tooltip">San Francisco, 2022</span>
-            </div>
-            <div class="location-dot visited" style="left: 48%; top: 28%;">
-                <span class="tooltip">London, 2024</span>
-            </div>
-            <div class="location-dot visited" style="left: 59%; top: 42%;">
-                <span class="tooltip">Dubai, 2023-2025</span>
-            </div>
-            <div class="location-dot visited" style="left: 74%; top: 44%;">
-                <span class="tooltip">Chiang Mai, 2025-2026</span>
-            </div>
-            <div class="location-dot visited" style="left: 75.5%; top: 49%;">
-                <span class="tooltip">Bangkok, 2023</span>
-            </div>
-            <div class="location-dot visited" style="left: 73.5%; top: 55%;">
-                <span class="tooltip">Phuket, 2023</span>
-            </div>
-            <div class="location-dot visited" style="left: 77.5%; top: 53%;">
-                <span class="tooltip">Singapore, 2022</span>
-            </div>
-            <div class="location-dot visited" style="left: 70.5%; top: 58%;">
-                <span class="tooltip">Sri Lanka, 2026</span>
-            </div>
-            <div class="location-dot visited" style="left: 68%; top: 36%;">
-                <span class="tooltip">Ladakh, India</span>
-            </div>
-            <div class="location-dot visited" style="left: 69.5%; top: 52%;">
-                <span class="tooltip">Kodaikanal, India</span>
-            </div>
-            <div class="location-dot visited" style="left: 74.5%; top: 56%;">
-                <span class="tooltip">Langkawi, Malaysia</span>
-            </div>
-            <div class="location-dot visited" style="left: 76%; top: 54%;">
-                <span class="tooltip">Kuala Lumpur, 2022</span>
-            </div>
-            
-            <!-- Wishlist locations (orange) -->
-            <div class="location-dot wishlist" style="left: 44%; top: 32%;">
-                <span class="tooltip">Portugal (want to visit)</span>
-            </div>
-            <div class="location-dot wishlist" style="left: 23%; top: 36%;">
-                <span class="tooltip">New York (want to visit)</span>
-            </div>
-            <div class="location-dot wishlist" style="left: 78%; top: 47%;">
-                <span class="tooltip">Da Nang, Vietnam (want to visit)</span>
+    <div class="travel-section">
+        <div class="travel-category">
+            <h3>Been there</h3>
+            <div class="travel-places">
+                <span class="travel-place visited"><span class="dot"></span>San Francisco, 2022</span>
+                <span class="travel-place visited"><span class="dot"></span>London, 2024</span>
+                <span class="travel-place visited"><span class="dot"></span>Dubai, 2023-2025</span>
+                <span class="travel-place visited"><span class="dot"></span>Singapore, 2022</span>
+                <span class="travel-place visited"><span class="dot"></span>Chiang Mai, 2025-2026</span>
+                <span class="travel-place visited"><span class="dot"></span>Bangkok, 2023</span>
+                <span class="travel-place visited"><span class="dot"></span>Phuket, 2023</span>
+                <span class="travel-place visited"><span class="dot"></span>Sri Lanka, 2026</span>
+                <span class="travel-place visited"><span class="dot"></span>Ladakh, India</span>
+                <span class="travel-place visited"><span class="dot"></span>Kodaikanal, India</span>
+                <span class="travel-place visited"><span class="dot"></span>Langkawi, Malaysia</span>
+                <span class="travel-place visited"><span class="dot"></span>Kuala Lumpur, 2022</span>
             </div>
         </div>
-    </div>
-    <div class="map-legend">
-        <div class="legend-item">
-            <span class="legend-dot visited"></span>
-            <span>Been there</span>
-        </div>
-        <div class="legend-item">
-            <span class="legend-dot wishlist"></span>
-            <span>Want to visit</span>
+        <div class="travel-category">
+            <h3>Want to visit</h3>
+            <div class="travel-places">
+                <span class="travel-place wishlist"><span class="dot"></span>Portugal</span>
+                <span class="travel-place wishlist"><span class="dot"></span>New York</span>
+                <span class="travel-place wishlist"><span class="dot"></span>Da Nang, Vietnam</span>
+            </div>
         </div>
     </div>
 
