@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shashank Jha - Fractional CTO</title>
-    <meta name="description" content="Experienced engineering leader offering fractional CTO services" />
+    <meta name="description" content="Experienced engineering leader offering fractional CTO services for early-stage startups." />
     <meta name="author" content="Shashank Jha" />
     <link rel="icon" href="assets/images/favicon/favicon.ico" type="image/x-icon" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
@@ -49,9 +49,14 @@
         h1 {
             font-size: 32px;
             font-weight: 500;
-            margin-bottom: 0;
+            margin-bottom: 8px;
             color: #000;
             letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            color: #666;
         }
 
         h2 {
@@ -91,6 +96,21 @@
             margin-bottom: 16px;
         }
 
+        .highlight-box {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-left: 3px solid #1c1c1c;
+            border-radius: 0 6px 6px 0;
+            padding: 20px 24px;
+            margin: 24px 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            font-size: 15px;
+            color: #464646;
+        }
+
         .services-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -124,23 +144,98 @@
             color: #666;
             line-height: 1.5;
             margin-bottom: 8px;
+            padding-left: 16px;
+            position: relative;
         }
 
-        .tools-list {
+        .service-card li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #999;
+            font-size: 12px;
+        }
+
+        .service-card li:last-child {
+            margin-bottom: 0;
+        }
+
+        .problem-list {
             list-style: none;
             margin-top: 16px;
         }
 
-        .tools-list li {
-            margin-bottom: 12px;
+        .problem-list li {
+            margin-bottom: 16px;
+            font-size: 15px;
+            color: #464646;
+            line-height: 1.7;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        .problem-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #999;
+        }
+
+        .problem-list strong {
+            color: #1c1c1c;
+        }
+
+        .tools-section {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 6px;
+            padding: 24px;
+            margin-top: 14px;
+        }
+
+        .tools-section h3 {
+            font-size: 15px;
+            font-weight: 500;
+            color: #000;
+            margin-bottom: 16px;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .tools-grid div {
             font-size: 14px;
             color: #464646;
-            line-height: 1.6;
+        }
+
+        .tools-grid strong {
+            color: #1c1c1c;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .how-list {
+            list-style: none;
+            margin-top: 16px;
+        }
+
+        .how-list li {
+            margin-bottom: 16px;
+            font-size: 15px;
+            color: #464646;
+            line-height: 1.7;
+        }
+
+        .how-list strong {
+            color: #1c1c1c;
         }
 
         .cta {
             margin-top: 45px;
-            padding: 22px;
+            padding: 24px;
             background: #fff;
             border: 1px solid #e5e5e5;
             border-radius: 6px;
@@ -152,9 +247,49 @@
             font-size: 15px;
         }
 
+        .cta p:last-child {
+            margin-bottom: 0;
+        }
+
         .cta a {
             color: #1c1c1c;
             font-weight: 500;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 16px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #1c1c1c;
+            color: #fff !important;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+
+        .cta-button:hover {
+            background: #333;
+            border: none;
+        }
+
+        .cta-button.secondary {
+            background: #fff;
+            color: #1c1c1c !important;
+            border: 1px solid #e5e5e5;
+        }
+
+        .cta-button.secondary:hover {
+            background: #f5f5f5;
+            border: 1px solid #e5e5e5;
         }
 
         @media (max-width: 768px) {
@@ -170,6 +305,14 @@
                 grid-template-columns: 1fr;
                 gap: 12px;
             }
+
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -179,73 +322,106 @@
 
     <header>
         <h1>Fractional CTO</h1>
+        <p class="subtitle">Technical leadership for early-stage startups without the full-time commitment</p>
     </header>
 
     <div class="intro">
         <p>
-            With tools like Claude Code, I can now ship 3-5x faster than before. But speed doesn't buy you taste. That's
-            where I come in.
+            You're a founder with a vision. You know what you want to build, but navigating the technical side—hiring engineers, choosing the right stack, shipping fast without breaking things—feels like a full-time job on its own.
         </p>
         <p>
-            I bring taste to the table—knowing what to build, when to build it, and how to get the best work out of your
-            team. I've spent 10+ years building tech at <a href="https://swiggy.com" target="_blank">Swiggy</a>, <a
-                href="https://truebeacon.com" target="_blank">TrueBeacon</a> (by <a href="https://zerodha.com"
-                target="_blank">Zerodha</a>), <a href="https://mpl.live" target="_blank">MPL</a>, <a
-                href="https://fylehq.com" target="_blank">Fyle</a> & Belong. Led teams, shipped products, made the hard
-            calls.
-        </p>
-        <p>
-            Success for me means hearing you say, "Relax, Shashank's on it".
+            That's where I come in. I've spent 10+ years building products at companies like <a href="https://swiggy.com" target="_blank">Swiggy</a>, <a href="https://truebeacon.com" target="_blank">TrueBeacon</a> (by Zerodha), <a href="https://mpl.live" target="_blank">MPL</a>, and <a href="https://fylehq.com" target="_blank">Fyle</a>. Led teams, shipped 16+ products through my dev shop, made the hard calls.
         </p>
     </div>
+
+    <div class="highlight-box">
+        <p>
+            Success for me means hearing you say: "Relax, Shashank's on it."
+        </p>
+    </div>
+
+    <h2>Who This Is For</h2>
+
+    <ul class="problem-list">
+        <li><strong>Early-stage founders</strong> who need technical guidance but aren't ready for a full-time CTO</li>
+        <li><strong>Non-technical founders</strong> who want a trusted partner to translate vision into product</li>
+        <li><strong>Growing startups</strong> that need help building and managing their engineering team</li>
+        <li><strong>Companies adopting AI</strong> who want to identify opportunities and implement solutions</li>
+    </ul>
 
     <h2>What We Can Do Together</h2>
 
     <div class="services-grid">
         <div class="service-card">
-            <h3>Technology & Product</h3>
+            <h3>Product & Engineering</h3>
             <ul>
-                <li>Build roadmap, choose stack, and plan sprints</li>
-                <li>Hands-on development as needed</li>
-                <li>Design, build and manage websites</li>
-                <li>Find, hire and manage engineers</li>
+                <li>Define roadmap and technical strategy</li>
+                <li>Choose the right stack for your stage</li>
+                <li>Hands-on development when needed</li>
+                <li>Code reviews and architecture decisions</li>
+                <li>Find, hire, and manage engineers</li>
             </ul>
         </div>
 
         <div class="service-card">
-            <h3>AI & LLMs</h3>
+            <h3>AI & Automation</h3>
             <ul>
-                <li>Optimize business operations with LLM tools</li>
-                <li>Boost team productivity with AI</li>
                 <li>Identify AI opportunities in your business</li>
-                <li>Develop custom AI solutions</li>
+                <li>Build custom LLM-powered workflows</li>
+                <li>Optimize operations with AI tools</li>
+                <li>Boost team productivity with automation</li>
+                <li>Develop agentic AI solutions</li>
             </ul>
         </div>
     </div>
 
-    <h2>Tools I Use</h2>
+    <h2>Technical Stack</h2>
 
-    <ul class="tools-list">
-        <li><strong>Front-end:</strong> HTML, CSS, JavaScript, TypeScript, React, Next.js, Tailwind</li>
-        <li><strong>Back-end:</strong> Python, Java, Node.js</li>
-        <li><strong>Platforms:</strong> Shopify, Retool, PostHog, Notion, Atlassian, MixPanel, Intercom</li>
-        <li><strong>Design:</strong> Figma, Photoshop, Canva</li>
-        <li><strong>Cloud:</strong> AWS (Lambda, RDS, EC2, S3), Google Cloud, Vercel, Railway</li>
-        <li><strong>Databases:</strong> Postgres, MySQL, GraphQL, DynamoDB</li>
-    </ul>
+    <div class="tools-section">
+        <div class="tools-grid">
+            <div>
+                <strong>Frontend</strong>
+                React, Next.js, TypeScript, Tailwind
+            </div>
+            <div>
+                <strong>Backend</strong>
+                Python, Node.js, Java, GraphQL
+            </div>
+            <div>
+                <strong>Cloud</strong>
+                AWS, Google Cloud, Vercel, Railway
+            </div>
+            <div>
+                <strong>Databases</strong>
+                Postgres, MySQL, DynamoDB, Redis
+            </div>
+            <div>
+                <strong>Tools</strong>
+                Figma, Retool, PostHog, Linear
+            </div>
+            <div>
+                <strong>AI/ML</strong>
+                OpenAI, Claude, LangChain, Custom agents
+            </div>
+        </div>
+    </div>
 
     <h2>How I Work</h2>
 
-    <ul class="tools-list">
-        <li>Weekly check-in call</li>
-        <li>Full integration with your team tools and processes</li>
-        <li>Focus on results, not hours</li>
+    <ul class="how-list">
+        <li><strong>Weekly sync calls.</strong> We stay aligned on priorities, blockers, and what's shipping next.</li>
+        <li><strong>Async by default.</strong> I integrate with your tools—Slack, Linear, Notion—whatever you use.</li>
+        <li><strong>Results over hours.</strong> I care about outcomes, not timesheets. You're paying for progress.</li>
+        <li><strong>Hands-on when needed.</strong> I'm not just advising from the sidelines. I'll write code, review PRs, and ship alongside your team.</li>
     </ul>
 
     <div class="cta">
-        <p>Interested in working together?</p>
-        <p><a href="https://cal.com/theshajha/fractional-cto" target="_blank">Book a discovery call</a> or <a
-                href="mailto:theshajha+website@gmail.com">send an email</a>.</p>
+        <p><strong>Interested in working together?</strong></p>
+        <p>Let's start with a conversation. No pitch, no pressure—just figuring out if there's a fit.</p>
+        <div class="cta-buttons">
+            <a href="https://cal.com/theshajha/fractional-cto" class="cta-button" target="_blank">Book a call</a>
+            <a href="mailto:theshajha+cto@gmail.com" class="cta-button secondary">Send an email</a>
+        </div>
     </div>
 </body>
 
