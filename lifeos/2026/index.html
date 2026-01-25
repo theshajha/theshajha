@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2026 Manifesto - LifeOS - Shashank Jha</title>
+    <meta name="description" content="The 2026 Manifesto: A year of compounding. Three projects, agentic AI workflows, and building systems that grow." />
+    <meta name="author" content="Shashank Jha" />
+    <link rel="icon" href="../../assets/images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/favicon/apple-touch-icon.png" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 720px;
+            padding: 56px 32px;
+            color: #1c1c1c;
+            background: #fafafa;
+            font-size: 15px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #666;
+            font-size: 13px;
+            border: none;
+            margin-bottom: 24px;
+        }
+
+        .back-link:hover {
+            color: #1c1c1c;
+        }
+
+        header {
+            margin-bottom: 34px;
+        }
+
+        .year-badge {
+            display: inline-block;
+            font-size: 12px;
+            color: #fff;
+            background: #1c1c1c;
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: #000;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            color: #666;
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 13px;
+            font-weight: 500;
+            margin-top: 45px;
+            margin-bottom: 14px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: 500;
+            color: #000;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #464646;
+            line-height: 1.7;
+        }
+
+        a {
+            color: #1c1c1c;
+            text-decoration: none;
+            border-bottom: 1px solid #d4d4d4;
+            transition: border-color 0.15s;
+        }
+
+        a:hover {
+            border-bottom-color: #1c1c1c;
+        }
+
+        .intro {
+            margin-bottom: 34px;
+        }
+
+        .intro p {
+            font-size: 16px;
+            line-height: 1.65;
+            margin-bottom: 16px;
+        }
+
+        .highlight-box {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-left: 3px solid #1c1c1c;
+            border-radius: 0 6px 6px 0;
+            padding: 20px 24px;
+            margin: 24px 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            font-size: 15px;
+            color: #464646;
+        }
+
+        .context-section {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 6px;
+            padding: 24px;
+            margin-top: 14px;
+        }
+
+        .context-section p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .context-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .projects-section {
+            margin-top: 14px;
+        }
+
+        .project-card {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 6px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+
+        .project-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+
+        .project-card h3 {
+            margin: 0;
+        }
+
+        .project-badge {
+            font-size: 11px;
+            color: #666;
+            padding: 4px 8px;
+            background: #f5f5f5;
+            border-radius: 4px;
+        }
+
+        .project-card p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .project-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-goal {
+            font-size: 13px;
+            color: #1c1c1c;
+            font-weight: 500;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #e5e5e5;
+        }
+
+        .principles-list {
+            list-style: none;
+            margin-top: 16px;
+        }
+
+        .principles-list li {
+            margin-bottom: 16px;
+            font-size: 15px;
+            color: #464646;
+            line-height: 1.7;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        .principles-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #999;
+        }
+
+        .principles-list strong {
+            color: #1c1c1c;
+        }
+
+        .travel-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-top: 14px;
+        }
+
+        .travel-card {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 6px;
+            padding: 20px;
+        }
+
+        .travel-card h4 {
+            font-size: 15px;
+            font-weight: 500;
+            color: #000;
+            margin-bottom: 8px;
+        }
+
+        .travel-card p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .travel-status {
+            display: inline-block;
+            font-size: 11px;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-top: 8px;
+        }
+
+        .travel-status.done {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .travel-status.planned {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .operating-principles {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 6px;
+            padding: 24px;
+            margin-top: 14px;
+        }
+
+        .operating-principles h3 {
+            margin-bottom: 16px;
+        }
+
+        .operating-principles ul {
+            list-style: none;
+        }
+
+        .operating-principles li {
+            font-size: 14px;
+            color: #464646;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .operating-principles li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #999;
+        }
+
+        .operating-principles li:last-child {
+            margin-bottom: 0;
+        }
+
+        .footer-note {
+            margin-top: 45px;
+            padding-top: 22px;
+            border-top: 1px solid #e5e5e5;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .footer-note p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 34px 24px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .travel-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .project-header {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="../" class="back-link">← LifeOS</a>
+
+    <header>
+        <span class="year-badge">2026</span>
+        <h1>The Compounding Year</h1>
+        <p class="subtitle">Three projects, agentic workflows, and building systems that grow</p>
+    </header>
+
+    <div class="intro">
+        <p>
+            Everybody knows and wants certain things in life. But what they end up doing is asking, "Why is this not happening sooner?" Most of life's pain comes from when compounding stops.
+        </p>
+        <p>
+            This year is about building a roadmap to slowly let things compound. No shortcuts. No forcing. Just consistent work on the right things, with the right systems in place.
+        </p>
+    </div>
+
+    <div class="highlight-box">
+        <p>
+            2023-2024 was a year of great learnings. In many ways, life stopped making sense, and I had to pick up the pieces, learn from them, and tie them all together. Now, we're entering a growth phase—working on things that compound.
+        </p>
+    </div>
+
+    <h2>The Thesis</h2>
+
+    <div class="context-section">
+        <p>
+            I want to work on things that build over time. Projects where the output of year one makes year two easier. Relationships that deepen. Skills that stack. Systems that improve themselves.
+        </p>
+        <p>
+            The constraint: I'm working alone, but I don't want to be limited by it. Each project will have its own agentic AI workflows—agents that mimic having different employees and roles, executing alongside me. Not replacing human connection, but amplifying what one person can do.
+        </p>
+    </div>
+
+    <h2>The Projects</h2>
+
+    <div class="projects-section">
+        <div class="project-card">
+            <div class="project-header">
+                <h3><a href="https://187.studio" target="_blank" style="border: none;">Tech Hiring</a></h3>
+                <span class="project-badge">Active</span>
+            </div>
+            <p>
+                Building relationships with fast-growing startups and great engineering talent. The interesting part isn't just the placements—it's running the project itself. Understanding what makes great matches, building trust on both sides, and creating a network that compounds.
+            </p>
+            <p>
+                This is about quality over volume. No bulk resumes. No spray-and-pray recruiting. Just thoughtful matching between people I'd work with myself.
+            </p>
+            <div class="project-goal">Goal: 20-30 high-quality engineers placed in great companies</div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-header">
+                <h3><a href="https://dxbstart.com" target="_blank" style="border: none;">DXB Start</a></h3>
+                <span class="project-badge">Building</span>
+            </div>
+            <p>
+                Dubai has a non-existent startup economy. I want to contribute to changing that. The goal is to create one place where people in the startup community can engage, chill, get to know each other, and support one another.
+            </p>
+            <p>
+                I love early-stage startups. My love for early-stage is about innovation—the energy of building something from nothing, the scrappiness, the belief that this thing might actually work. Dubai needs more of this.
+            </p>
+            <div class="project-goal">Goal: Build a thriving community hub for Dubai's startup ecosystem</div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-header">
+                <h3><a href="https://perkpilot.in" target="_blank" style="border: none;">Perk Pilot</a></h3>
+                <span class="project-badge">Experimental</span>
+            </div>
+            <p>
+                Reliable information on what credit cards to use and how to maximize rewards. This is a pet peeve—I want to learn and maximize money through credit cards as a starting point.
+            </p>
+            <p>
+                More importantly, this is my playground for building agentic AI workflows. Learning what works, what doesn't, and how to scale my output using AI agents that act as different team members. The learnings here will inform how I run the other projects.
+            </p>
+            <div class="project-goal">Goal: Build a personal agentic AI workflow for maximum output</div>
+        </div>
+    </div>
+
+    <h2>Operating with AI Agents</h2>
+
+    <div class="operating-principles">
+        <h3>The Human + AI Model</h3>
+        <ul>
+            <li>Every project will have agentic workflows that mimic having different employees and roles</li>
+            <li>Agents will handle specific skills and execute certain tasks alongside me</li>
+            <li>This isn't about replacing human connection—it's about amplifying what one person can do</li>
+            <li>The goal is to work alone but not be limited by working alone</li>
+            <li>Each project will inform the others on what works and what doesn't</li>
+        </ul>
+    </div>
+
+    <h2>Beyond Work</h2>
+
+    <div class="context-section">
+        <p>
+            Work is important but it's not everything. This year is also about exploring more of the world, meeting people from different walks of life, and doing things that make me feel alive.
+        </p>
+    </div>
+
+    <h2>Travel</h2>
+
+    <div class="travel-grid">
+        <div class="travel-card">
+            <h4>Chiang Mai, Thailand</h4>
+            <p>Just came back after spending a month-and-a-half there. Absolutely love it—the pace, the food, the digital nomad community.</p>
+            <span class="travel-status done">Done</span>
+        </div>
+
+        <div class="travel-card">
+            <h4>Sri Lanka</h4>
+            <p>Next on the list. Looking forward to exploring the country, the culture, and maybe finding another place that feels like a second home.</p>
+            <span class="travel-status planned">Planned</span>
+        </div>
+
+        <div class="travel-card">
+            <h4>Europe</h4>
+            <p>Possibly on cards for this year. No specific country yet—just want to spend time exploring the continent.</p>
+            <span class="travel-status planned">Planned</span>
+        </div>
+    </div>
+
+    <h2>Guiding Principles for 2026</h2>
+
+    <ul class="principles-list">
+        <li><strong>Let things compound.</strong> Resist the urge to force outcomes. Plant seeds, water them, and trust the process.</li>
+        <li><strong>Quality over quantity.</strong> In hiring, in community, in work—depth beats breadth every time.</li>
+        <li><strong>Build systems, not just outcomes.</strong> The system that produces results is more valuable than any single result.</li>
+        <li><strong>Stay scrappy.</strong> One person with the right tools and systems can do what used to require a team.</li>
+        <li><strong>Keep moving.</strong> Travel, meet people, stay curious. The best ideas come from unexpected places.</li>
+    </ul>
+
+    <div class="footer-note">
+        <p>
+            This is a living document. It will evolve as the year progresses, projects mature, and new learnings emerge. The goal isn't perfection—it's direction.
+        </p>
+    </div>
+</body>
+
+</html>

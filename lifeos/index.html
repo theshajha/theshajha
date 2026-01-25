@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LifeOS - Shashank Jha</title>
+    <meta name="description" content="A personal operating system for designing life with intention. Yearly manifestos, principles, and frameworks." />
+    <meta name="author" content="Shashank Jha" />
+    <link rel="icon" href="../assets/images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 720px;
+            padding: 56px 32px;
+            color: #1c1c1c;
+            background: #fafafa;
+            font-size: 15px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #666;
+            font-size: 13px;
+            border: none;
+            margin-bottom: 24px;
+        }
+
+        .back-link:hover {
+            color: #1c1c1c;
+        }
+
+        header {
+            margin-bottom: 34px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: #000;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            color: #666;
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 13px;
+            font-weight: 500;
+            margin-top: 45px;
+            margin-bottom: 14px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #464646;
+            line-height: 1.7;
+        }
+
+        a {
+            color: #1c1c1c;
+            text-decoration: none;
+            border-bottom: 1px solid #d4d4d4;
+            transition: border-color 0.15s;
+        }
+
+        a:hover {
+            border-bottom-color: #1c1c1c;
+        }
+
+        .intro {
+            margin-bottom: 34px;
+        }
+
+        .intro p {
+            font-size: 16px;
+            line-height: 1.65;
+            margin-bottom: 16px;
+        }
+
+        .highlight-box {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-left: 3px solid #1c1c1c;
+            border-radius: 0 6px 6px 0;
+            padding: 20px 24px;
+            margin: 24px 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            font-size: 15px;
+            color: #464646;
+        }
+
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 14px;
+            margin-bottom: 45px;
+        }
+
+        .pillar-card {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 6px;
+            padding: 20px;
+        }
+
+        .pillar-card h3 {
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: #000;
+        }
+
+        .pillar-card p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .manifesto-list {
+            list-style: none;
+            margin-top: 16px;
+        }
+
+        .manifesto-list li {
+            margin-bottom: 16px;
+        }
+
+        .manifesto-card {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 6px;
+            padding: 20px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: border-color 0.15s;
+        }
+
+        .manifesto-card:hover {
+            border-color: #b8b8b8;
+        }
+
+        .manifesto-card a {
+            border: none;
+        }
+
+        .manifesto-info h3 {
+            font-size: 16px;
+            font-weight: 500;
+            color: #000;
+            margin-bottom: 4px;
+        }
+
+        .manifesto-info p {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+        }
+
+        .manifesto-badge {
+            font-size: 12px;
+            color: #fff;
+            background: #1c1c1c;
+            padding: 4px 10px;
+            border-radius: 4px;
+        }
+
+        .manifesto-badge.archive {
+            background: #666;
+        }
+
+        .origin-section {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 6px;
+            padding: 24px;
+            margin-top: 14px;
+        }
+
+        .origin-section h3 {
+            font-size: 15px;
+            font-weight: 500;
+            color: #000;
+            margin-bottom: 12px;
+        }
+
+        .origin-section p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .origin-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .principles-list {
+            list-style: none;
+            margin-top: 16px;
+        }
+
+        .principles-list li {
+            margin-bottom: 16px;
+            font-size: 15px;
+            color: #464646;
+            line-height: 1.7;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        .principles-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #999;
+        }
+
+        .principles-list strong {
+            color: #1c1c1c;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 34px 24px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .pillars-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .manifesto-card {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="../index.html" class="back-link">← Home</a>
+
+    <header>
+        <h1>LifeOS</h1>
+        <p class="subtitle">A personal operating system for designing life with intention</p>
+    </header>
+
+    <div class="intro">
+        <p>
+            Three years ago, I set out to be financially free and take more control over my time. Today, this has evolved into something more—a system for living intentionally, working on things that compound, and creating a life I don't need a vacation from.
+        </p>
+        <p>
+            LifeOS is my second brain. A mental model that helps me stay consistent with what matters, make better decisions, and navigate the inevitable chaos of building a life on your own terms.
+        </p>
+    </div>
+
+    <div class="highlight-box">
+        <p>
+            Goals can change but this is a way to keep them consistent for at least every 365 days. The manifesto is a yearly commitment—a public declaration of what I'm working towards.
+        </p>
+    </div>
+
+    <h2>The Three Pillars</h2>
+
+    <div class="pillars-grid">
+        <div class="pillar-card">
+            <h3>Joy</h3>
+            <p>How I spend my time. Relationships, health, and doing things that make me feel alive.</p>
+        </div>
+
+        <div class="pillar-card">
+            <h3>Money</h3>
+            <p>Financial freedom. Creating wealth through work that compounds and investments that grow.</p>
+        </div>
+
+        <div class="pillar-card">
+            <h3>Impact</h3>
+            <p>On the world and people. Building social capital through writing, shipping, and connecting.</p>
+        </div>
+    </div>
+
+    <h2>Yearly Manifestos</h2>
+
+    <ul class="manifesto-list">
+        <li>
+            <a href="2026/" class="manifesto-card">
+                <div class="manifesto-info">
+                    <h3>2026: The Compounding Year</h3>
+                    <p>Three projects, agentic workflows, and letting things build slowly</p>
+                </div>
+                <span class="manifesto-badge">Current</span>
+            </a>
+        </li>
+    </ul>
+
+    <h2>The Origin</h2>
+
+    <div class="origin-section">
+        <h3>Where This Started</h3>
+        <p>
+            I first wrote the LifeOS framework in 2023. It was a handbook to remind myself what matters and work towards those things in times when I feel the need to redesign my life altogether.
+        </p>
+        <p>
+            2023-2024 was a year of great learnings—in many ways, life stopped making sense, and I had to pick up the pieces, learn from them, and tie them all together. The framework helped me stay grounded while everything else was shifting.
+        </p>
+        <p>
+            Starting 2026, I'm publishing yearly manifestos publicly. Not because I have it figured out, but because writing it down makes it real, and sharing it creates accountability.
+        </p>
+    </div>
+
+    <h2>Core Principles</h2>
+
+    <ul class="principles-list">
+        <li><strong>Compounding over shortcuts.</strong> Most of life's pain comes from when compounding stops. Build systems that let things grow slowly but surely.</li>
+        <li><strong>Joy is non-negotiable.</strong> Relationships, health, and doing things that make you feel alive come first. Everything else is secondary.</li>
+        <li><strong>Work on what you'd do for free.</strong> When work feels like play, you've found the right game to be in.</li>
+        <li><strong>People tell you otherwise because that's the only life they know.</strong> It's your story. Write it however you like.</li>
+    </ul>
+</body>
+
+</html>
