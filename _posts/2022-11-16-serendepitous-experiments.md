@@ -54,3 +54,7 @@ Do I know for sure if this will work? **Absolutely not.**
 Will I have a lot of fun doing this? **100%.**
 
 Today, I'm grateful for the courage to experiment. And I intend to keep doing so.
+
+---
+
+**Update (2026):** This post marked a turning point. The reflection that started here eventually became [LifeOS](/lifeos/)—a personal operating system for designing life with intention. The playbook I mentioned building? It evolved into something bigger: a framework for staying consistent with what matters across Joy, Money, and Impact. If you're curious where this journey led, check out my [2026 manifesto](/lifeos/2026/).
