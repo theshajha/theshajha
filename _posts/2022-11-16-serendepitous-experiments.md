@@ -7,7 +7,7 @@ description: "Today, I am starting things again from scratch. It is day zero."
 layout: post
 ---
 
-> You can't connect the dots looking forward; you can only connect them looking backwards. So you have to trust that the dots will somehow connect in your future. You have to trust in something—your gut, destiny, life, karma, whatever. This approach has never let me down, and it has made all the difference in my life.
+> You can't connect the dots looking forward; you can only connect them looking backwards. So you have to trust that the dots will somehow connect in your future. You have to trust in something: your gut, destiny, life, karma, whatever. This approach has never let me down, and it has made all the difference in my life.
 >
 > — Steve Jobs
 
@@ -25,9 +25,9 @@ As a 16-year-old, I was rich.
 
 At 18, I started charging small businesses to build their websites.
 
-Back in college, I visited my college souvenir store. I didn't buy anything, but soon after, I started a merchandise business—selling directly to the college administration. Shortly after, I launched an e-commerce website where students could shop directly. In less than a year, I'd made enough to cover my college tuition.
+Back in college, I visited my college souvenir store. I didn't buy anything, but soon after, I started a merchandise business, selling directly to the college administration. Shortly after, I launched an e-commerce website where students could shop directly. In less than a year, I'd made enough to cover my college tuition.
 
-After graduation, I built a platform for buying from local stores instead of ordering the smallest item from Amazon or Flipkart. After ten months of trying to make it work, I went broke. But I kept pushing. I took loans to keep the business afloat—until I realized I'd accumulated debt nearly the size of what even the best job would pay me in a year.
+After graduation, I built a platform for buying from local stores instead of ordering the smallest item from Amazon or Flipkart. After ten months of trying to make it work, I went broke. But I kept pushing. I took loans to keep the business afloat, until I realized I'd accumulated debt nearly the size of what even the best job would pay me in a year.
 
 I quit the idea and found a job to pay back those debts. I worked as a software engineer, then a product manager, for about three years.
 
@@ -41,7 +41,7 @@ For some profound (or utterly stupid) reason, I don't want to spend the rest of 
 
 I spent two months on sabbatical. I treated it as a much-needed break to re-evaluate what's important to me and what kind of life I want to build. My conclusion: there are much better ways to achieve my goals than running a large team for a service business.
 
-I've decided to take a path that brings me the most joy—solving problems and building things. Creating a portfolio of profitable software businesses. Something that doesn't require me to be around every waking hour.
+I've decided to take a path that brings me the most joy: solving problems and building things. Creating a portfolio of profitable software businesses. Something that doesn't require me to be around every waking hour.
 
 Over the next 12-18 months, I'm experimenting with 4-6 ideas. Spending roughly 6-8 weeks to build and ship each one.
 
@@ -57,4 +57,4 @@ Today, I'm grateful for the courage to experiment. And I intend to keep doing so
 
 ---
 
-**Update (2026):** This post marked a turning point. The reflection that started here eventually became [LifeOS](/lifeos/)—a personal operating system for designing life with intention. The playbook I mentioned building? It evolved into something bigger: a framework for staying consistent with what matters across Joy, Money, and Impact. If you're curious where this journey led, check out my [2026 manifesto](/lifeos/2026/).
+**Update (2026):** This post marked a turning point. The reflection that started here eventually became [LifeOS](/lifeos/), a personal operating system for designing life with intention. The playbook I mentioned building? It evolved into something bigger: a framework for staying consistent with what matters across Joy, Money, and Impact. If you're curious where this journey led, check out my [2026 manifesto](/lifeos/2026/).
