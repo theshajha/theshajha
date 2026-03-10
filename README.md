@@ -6,9 +6,11 @@ Currently based in Dubai, building in public and exploring what's possible with 
 
 ## What I'm Building
 
-**[Gopingo](https://gopingo.io)** - AI communications co-pilot for small businesses
-**[DXBFI](https://dxbfi.com)** - Real estate analysis platform for Dubai
-**[Fitso.me](https://fitso.me)** - Personal wardrobe and lifestyle manager
+**[187 Studio](https://187.studio)** - AI-first engineering agency. Five senior engineers paired with AI, shipping software at startup speed for 30+ fast-growing companies.
+
+**[Rework](https://rwhq.io)** - Agent-first talent platform. Two-sided hiring marketplace connecting elite tech talent with fast-growing companies, built around speed, signal, and decision quality.
+
+**[Lurk](https://lurk.watch)** - Domain tracking for founders. Look up any domain, get an availability score, and get alerts when domains you want become available.
 
 ## Background
 
