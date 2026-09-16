@@ -1,0 +1,87 @@
+{%- assign memes = site.memes | sort: "rank" -%}
+{%- assign idx = 0 -%}
+{%- for m in memes -%}{%- if m.url == page.url -%}{%- assign idx = forloop.index0 -%}{%- endif -%}{%- endfor -%}
+{%- assign prev_idx = idx | minus: 1 -%}
+{%- assign next_idx = idx | plus: 1 -%}
+{%- assign page_url = page.url | absolute_url -%}
+{%- assign image_url = page.image | absolute_url -%}
+{%- if page.take -%}{%- assign og_description = page.take -%}{%- else -%}{%- assign og_description = "One of the memes I keep sending people. Credit: " | append: page.credit -%}{%- endif -%}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title }} - Top Memes - Shashank Jha</title>
+    <meta name="description" content="{{ og_description | escape }}" />
+    <meta name="author" content="Shashank Jha" />
+    <link rel="canonical" href="{{ page_url }}" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Shashank Jha" />
+    <meta property="og:title" content="{{ page.title | escape }}" />
+    <meta property="og:description" content="{{ og_description | escape }}" />
+    <meta property="og:url" content="{{ page_url }}" />
+    <meta property="og:image" content="{{ image_url }}" />
+    {%- if page.image_width %}
+    <meta property="og:image:width" content="{{ page.image_width }}" />
+    <meta property="og:image:height" content="{{ page.image_height }}" />
+    {%- endif %}
+    <meta property="og:image:alt" content="{{ page.alt | escape }}" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@theshajha" />
+    <meta name="twitter:title" content="{{ page.title | escape }}" />
+    <meta name="twitter:description" content="{{ og_description | escape }}" />
+    <meta name="twitter:image" content="{{ image_url }}" />
+    <meta name="twitter:image:alt" content="{{ page.alt | escape }}" />
+
+    <link rel="icon" href="/assets/images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png" />
+    {% include memes-style.html %}
+</head>
+
+<body class="meme-single">
+    <a href="/memes/" class="back-link">← All memes</a>
+
+    <header class="meme-head">
+        <span class="rank">#{{ page.rank }}</span>
+        <h1>{{ page.title }}</h1>
+    </header>
+
+    <figure>
+        <img src="{{ page.image }}" alt="{{ page.alt | escape }}"{% if page.image_width %} width="{{ page.image_width }}" height="{{ page.image_height }}"{% endif %} />
+        <figcaption>
+            {%- if page.credit_url -%}
+            Credit: <a href="{{ page.credit_url }}" target="_blank" rel="noopener">{{ page.credit }}</a>
+            {%- else -%}
+            Credit: {{ page.credit }}
+            {%- endif -%}
+        </figcaption>
+    </figure>
+
+    {%- if page.take %}
+    <p class="meme-take">{{ page.take }}</p>
+    {%- endif %}
+
+    {% include meme-share.html url=page_url title=page.title %}
+
+    {{ content }}
+
+    {%- if memes.size > 1 %}
+    <nav class="meme-nav" aria-label="More memes">
+        {%- if idx > 0 %}{% assign prev = memes[prev_idx] %}
+        <a href="{{ prev.url }}"><span class="rank">#{{ prev.rank }}</span>{{ prev.title }}</a>
+        {%- endif %}
+        {%- if next_idx < memes.size %}{% assign next = memes[next_idx] %}
+        <a class="next" href="{{ next.url }}"><span class="rank">#{{ next.rank }}</span>{{ next.title }} →</a>
+        {%- endif %}
+    </nav>
+    {%- endif %}
+
+    {% include meme-share-script.html %}
+</body>
+
+</html>

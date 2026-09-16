@@ -1,0 +1,345 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    :root {
+        --bg: #fafafa;
+        --card: #fff;
+        --line: #e5e5e5;
+        --ink: #1c1c1c;
+        --ink-strong: #000;
+        --muted: #666;
+        --rank: #c8322e;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
+        line-height: 1.6;
+        margin: 0 auto;
+        max-width: 720px;
+        padding: 56px 32px;
+        color: var(--ink);
+        background: var(--bg);
+        font-size: 15px;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .back-link {
+        display: inline-block;
+        color: var(--muted);
+        font-size: 13px;
+        border: none;
+        margin-bottom: 24px;
+    }
+
+    .back-link:hover {
+        color: var(--ink);
+    }
+
+    header {
+        margin-bottom: 34px;
+    }
+
+    h1 {
+        font-size: 32px;
+        font-weight: 500;
+        margin-bottom: 8px;
+        color: var(--ink-strong);
+        letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+        color: var(--muted);
+    }
+
+    p {
+        margin-bottom: 16px;
+        color: #464646;
+        line-height: 1.7;
+    }
+
+    a {
+        color: var(--ink);
+        text-decoration: none;
+        border-bottom: 1px solid #d4d4d4;
+        transition: border-color 0.15s;
+    }
+
+    a:hover {
+        border-bottom-color: var(--ink);
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+        outline: 2px solid var(--rank);
+        outline-offset: 3px;
+        border-radius: 2px;
+    }
+
+    .intro {
+        margin-bottom: 45px;
+    }
+
+    .intro p {
+        font-size: 16px;
+        line-height: 1.65;
+    }
+
+    /* Rank numeral — the one coloured thing on the page */
+    .rank {
+        font-variant-numeric: tabular-nums;
+        font-weight: 600;
+        color: var(--rank);
+        letter-spacing: -0.02em;
+    }
+
+    /* Listing cards */
+    .meme-card {
+        position: relative;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        margin-bottom: 32px;
+    }
+
+    .meme-card:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .meme-card > .rank {
+        position: absolute;
+        top: 22px;
+        left: -64px;
+        width: 48px;
+        text-align: right;
+        font-size: 22px;
+        line-height: 1;
+    }
+
+    .meme-card .rank-inline {
+        display: none;
+    }
+
+    .meme-card a.meme-image {
+        display: block;
+        border: none;
+        background: #f2f2f2;
+        border-radius: 6px 6px 0 0;
+        overflow: hidden;
+    }
+
+    .meme-card img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .meme-card .meme-foot {
+        padding: 18px 24px 20px;
+        border-top: 1px solid var(--line);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 10px 24px;
+    }
+
+    .meme-title {
+        font-size: 17px;
+        font-weight: 500;
+        color: var(--ink-strong);
+        line-height: 1.4;
+    }
+
+    .meme-title a {
+        border: none;
+    }
+
+    .meme-title a:hover {
+        border-bottom: 1px solid var(--ink);
+    }
+
+    .meme-credit {
+        font-size: 13px;
+        color: var(--muted);
+        margin: 4px 0 0;
+    }
+
+    .meme-credit a {
+        color: var(--muted);
+    }
+
+    .meme-credit a:hover {
+        color: var(--ink);
+    }
+
+    /* Share row — same on list and single page */
+    .share-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .share-row .share-btn {
+        appearance: none;
+        font: inherit;
+        font-size: 13px;
+        line-height: 1;
+        color: var(--ink);
+        background: var(--card);
+        border: 1px solid #d4d4d4;
+        border-radius: 999px;
+        padding: 8px 12px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: border-color 0.15s, background 0.15s;
+    }
+
+    .share-row .share-btn:hover {
+        border-color: var(--ink);
+    }
+
+    .share-row .share-btn[data-copied="true"] {
+        border-color: var(--ink);
+        background: var(--ink);
+        color: #fff;
+    }
+
+    .share-row .share-native {
+        display: none;
+    }
+
+    .share-row.can-share .share-native {
+        display: inline-block;
+    }
+
+    /* Single meme page */
+    .meme-single .meme-head {
+        margin-bottom: 20px;
+    }
+
+    .meme-single .meme-head .rank {
+        display: block;
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+
+    .meme-single h1 {
+        font-size: 28px;
+    }
+
+    .meme-single figure {
+        margin: 0 0 20px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    .meme-single figure img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .meme-single figcaption {
+        padding: 14px 20px;
+        border-top: 1px solid var(--line);
+        font-size: 13px;
+        color: var(--muted);
+    }
+
+    .meme-single figcaption a {
+        color: var(--muted);
+    }
+
+    .meme-single figcaption a:hover {
+        color: var(--ink);
+    }
+
+    .meme-take {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .meme-nav {
+        margin-top: 45px;
+        padding-top: 22px;
+        border-top: 1px solid var(--line);
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        font-size: 14px;
+    }
+
+    .meme-nav a {
+        border: none;
+        color: var(--muted);
+    }
+
+    .meme-nav a:hover {
+        color: var(--ink);
+    }
+
+    .meme-nav .rank {
+        margin-right: 6px;
+    }
+
+    .meme-nav .next {
+        margin-left: auto;
+        text-align: right;
+    }
+
+    .section-note {
+        margin-top: 45px;
+        padding-top: 22px;
+        border-top: 1px solid var(--line);
+        font-size: 14px;
+        color: var(--muted);
+    }
+
+    .section-note p {
+        color: var(--muted);
+        font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+        .meme-card > .rank {
+            display: none;
+        }
+
+        .meme-card .rank-inline {
+            display: inline;
+            margin-right: 8px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        body {
+            padding: 34px 24px;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        .meme-single h1 {
+            font-size: 24px;
+        }
+
+        .meme-card .meme-foot {
+            padding: 16px 18px 18px;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        a, .share-row .share-btn {
+            transition: none;
+        }
+    }
+</style>

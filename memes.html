@@ -1,0 +1,87 @@
+---
+layout: null
+permalink: /memes/
+---
+{%- assign memes = site.memes | sort: "rank" -%}
+{%- assign top = memes | first -%}
+{%- assign page_url = page.url | absolute_url -%}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top Memes - Shashank Jha</title>
+    <meta name="description" content="The engineering memes I keep sending people, ranked. Each one has its own link." />
+    <meta name="author" content="Shashank Jha" />
+    <link rel="canonical" href="{{ page_url }}" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Shashank Jha" />
+    <meta property="og:title" content="Top Memes" />
+    <meta property="og:description" content="The engineering memes I keep sending people, ranked. Each one has its own link." />
+    <meta property="og:url" content="{{ page_url }}" />
+    {%- if top %}
+    <meta property="og:image" content="{{ top.image | absolute_url }}" />
+    <meta property="og:image:alt" content="{{ top.alt | escape }}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="{{ top.image | absolute_url }}" />
+    {%- endif %}
+    <meta name="twitter:site" content="@theshajha" />
+    <meta name="twitter:title" content="Top Memes" />
+    <meta name="twitter:description" content="The engineering memes I keep sending people, ranked. Each one has its own link." />
+
+    <link rel="icon" href="/assets/images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png" />
+    {% include memes-style.html %}
+</head>
+
+<body>
+    <a href="/" class="back-link">← Home</a>
+
+    <header>
+        <h1>Top Memes</h1>
+        <p class="subtitle">The ones I keep sending people</p>
+    </header>
+
+    <div class="intro">
+        <p>
+            Ranked, unscientifically. Every meme here has its own link, so you can send the one you mean instead of a screenshot.
+        </p>
+    </div>
+
+    {%- for meme in memes %}
+    {%- assign meme_url = meme.url | absolute_url %}
+    <article class="meme-card" id="{{ meme.url | split: '/' | last }}">
+        <span class="rank" aria-hidden="true">#{{ meme.rank }}</span>
+        <a class="meme-image" href="{{ meme.url }}">
+            <img src="{{ meme.image }}" alt="{{ meme.alt | escape }}"{% if meme.image_width %} width="{{ meme.image_width }}" height="{{ meme.image_height }}"{% endif %} loading="{% if forloop.first %}eager{% else %}lazy{% endif %}" />
+        </a>
+        <div class="meme-foot">
+            <div>
+                <div class="meme-title"><span class="rank rank-inline">#{{ meme.rank }}</span><a href="{{ meme.url }}">{{ meme.title }}</a></div>
+                <p class="meme-credit">
+                    {%- if meme.credit_url -%}
+                    Credit: <a href="{{ meme.credit_url }}" target="_blank" rel="noopener">{{ meme.credit }}</a>
+                    {%- else -%}
+                    Credit: {{ meme.credit }}
+                    {%- endif -%}
+                </p>
+            </div>
+            {% include meme-share.html url=meme_url title=meme.title %}
+        </div>
+    </article>
+    {%- endfor %}
+
+    <div class="section-note">
+        <p>
+            Grows whenever something makes me laugh twice. Got one that belongs here? <span style="white-space: nowrap;">Send it to me on <a href="https://x.com/theshajha" target="_blank" rel="noopener">X</a>.</span>
+        </p>
+    </div>
+
+    {% include meme-share-script.html %}
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+{%- assign share_url = include.url -%}
+{%- assign share_text = include.title | append: " — via @theshajha" -%}
+<div class="share-row" data-url="{{ share_url }}" data-title="{{ include.title | escape }}">
+    <button type="button" class="share-btn share-copy">Copy link</button>
+    <a class="share-btn" href="https://x.com/intent/post?text={{ share_text | url_encode }}&url={{ share_url | url_encode }}" target="_blank" rel="noopener">Post on X</a>
+    <a class="share-btn" href="https://wa.me/?text={{ share_text | append: ' ' | append: share_url | url_encode }}" target="_blank" rel="noopener">WhatsApp</a>
+    <button type="button" class="share-btn share-native">Share…</button>
+</div>

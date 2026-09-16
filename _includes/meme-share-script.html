@@ -1,0 +1,56 @@
+<script>
+    (function () {
+        var rows = document.querySelectorAll('.share-row');
+        var canShare = typeof navigator.share === 'function';
+
+        function copyText(text) {
+            if (navigator.clipboard && window.isSecureContext) {
+                return navigator.clipboard.writeText(text);
+            }
+            return new Promise(function (resolve, reject) {
+                var ta = document.createElement('textarea');
+                ta.value = text;
+                ta.setAttribute('readonly', '');
+                ta.style.position = 'fixed';
+                ta.style.top = '-1000px';
+                document.body.appendChild(ta);
+                ta.select();
+                try {
+                    document.execCommand('copy') ? resolve() : reject();
+                } catch (e) {
+                    reject(e);
+                }
+                document.body.removeChild(ta);
+            });
+        }
+
+        Array.prototype.forEach.call(rows, function (row) {
+            var url = row.getAttribute('data-url');
+            var title = row.getAttribute('data-title');
+            var copyBtn = row.querySelector('.share-copy');
+            var nativeBtn = row.querySelector('.share-native');
+
+            if (copyBtn) {
+                copyBtn.addEventListener('click', function () {
+                    copyText(url).then(function () {
+                        copyBtn.textContent = 'Copied';
+                        copyBtn.setAttribute('data-copied', 'true');
+                        setTimeout(function () {
+                            copyBtn.textContent = 'Copy link';
+                            copyBtn.removeAttribute('data-copied');
+                        }, 1600);
+                    }, function () {
+                        window.prompt('Copy this link', url);
+                    });
+                });
+            }
+
+            if (canShare && nativeBtn) {
+                row.classList.add('can-share');
+                nativeBtn.addEventListener('click', function () {
+                    navigator.share({ title: title, url: url }).catch(function () {});
+                });
+            }
+        });
+    })();
+</script>
